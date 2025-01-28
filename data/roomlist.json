@@ -1,0 +1,22 @@
+[
+  {
+    "id": "room0",
+    "name": "Time"
+  },
+  {
+    "id": "room1",
+    "name": "Innovation Hub"
+  },
+  {
+    "id": "room2",
+    "name": "The Think Tank"
+  },
+  {
+    "id": "room3",
+    "name": "Visionary Hall"
+  },
+  {
+    "id": "room4",
+    "name": "Collaboration Corner"
+  }
+]
