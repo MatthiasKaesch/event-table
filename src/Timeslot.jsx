@@ -30,13 +30,16 @@ const Timeslot = ({ id, time, events, rooms, isGlobal }) => {
 
               {event.speakers?.filter((speaker) => speaker.trim() !== '')
                 .length > 0 && (
-                <p className="panel_speakers">{event.speakers.join(', ')}</p>
+                <div className="panel_speakers">
+                  <p className="panel_speakers__text">Speakers:</p>
+                  <p className="panel_speakers__text">
+                    {event.speakers.join(', ')}
+                  </p>
+                </div>
               )}
 
               {!isGlobal && (
-                <p className="panel_roomInfo">
-                  Room: {rooms[event.roomNumber].name}
-                </p>
+                <p className="panel_roomInfo">{rooms[event.roomNumber].name}</p>
               )}
             </section>
           )

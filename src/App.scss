@@ -1,3 +1,4 @@
+@use './global_styling/variables.scss' as var;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 h1,
@@ -9,8 +10,13 @@ p,
 }
 
 .wrapper {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+
   @media (min-width: 1140px) {
-    padding: 3.75rem;
+    width: calc(100% - 32px);
+    max-width: 1680px;
+    padding: 3.75rem 0;
   }
 }
 
@@ -44,7 +50,6 @@ p,
 }
 
 .list {
-  list-style: none;
   padding-left: 0;
 
   @media (max-width: 1140px) {
@@ -55,6 +60,6 @@ p,
 .roomlist_item {
   text-align: center;
   font-weight: 700;
-  background-color: #054733;
-  color: #fbf5f3;
+  background-color: var.$primary;
+  color: var.$white;
 }

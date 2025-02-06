@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Color scheme:
-https://coolors.co/054733-fbf5f3-1e1825-007ea7-ecebe9
+https://coolors.co/054733-fbf5f3-1e1825-007ea7-ecebe9-eeedeb-9E6240
 
 Credits for normalize css going to Andy Bell
 https://piccalil.li/blog/a-more-modern-css-reset/

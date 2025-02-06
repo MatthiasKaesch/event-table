@@ -1,6 +1,6 @@
 import rooms from './data/roomlist.json'
 import timeSlotsData from './data/timeslots.json'
-import './normalize.css'
+import './global_styling/normalize.css'
 import './App.scss'
 
 import Timeslot from './Timeslot'

@@ -1,6 +1,8 @@
+@use './global_styling/variables.scss' as var;
+
 .timeSlot_grid {
   display: grid;
-  gap: 1rem;
+  gap: var.$grid-gap;
   margin-top: 1rem;
 
   @media (min-width: 1140px) {
@@ -12,18 +14,17 @@
 
 .timeslot {
   margin: 0;
-  padding-top: 0.5rem;
-  font-size: 1rem;
+  padding-top: var.$grid-gap;
+  font-size: 1.25rem;
   font-weight: 700;
   white-space: nowrap;
-  background-color: #054733;
-  color: #fbf5f3;
+  background-color: var.$primary;
+  color: var.$white;
 
   @media (min-width: 1140px) {
-    background-color: #007ea7;
-    color: #fbf5f3;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    background-color: var.$secondary;
+    border-top-right-radius: var.$borderR;
+    border-bottom-right-radius: var.$borderR;
     text-align: center;
   }
 }
@@ -35,13 +36,13 @@
 
     @media (min-width: 1140px) {
       grid-template-columns: 90px 1fr;
-      gap: 1rem;
+      gap: var.$grid-gap;
     }
   }
 
   &_wrapper {
     display: grid;
-    gap: 0 1rem;
+    gap: 0 var.$grid-gap;
 
     //stretch over width of parent grid
     grid-column: 2/-1;
@@ -60,12 +61,12 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
+    overflow: hidden;
 
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    border-radius: 4px;
-    border: 1px solid #ecebe9;
-    background-color: #ecebe9;
+    margin-top: var.$grid-gap;
+    border-radius: var.$borderR;
+    border: 1px solid var.$background;
+    background-color: var.$background;
 
     @media (min-width: 1140px) {
       margin-top: 0;
@@ -76,17 +77,17 @@
       align-items: center;
 
       @media (min-width: 1140px) {
-        border-color: #054733;
+        border-color: var.$primary;
       }
     }
 
     &.empty {
       background: repeating-linear-gradient(
         -45deg,
-        #ebebeb,
-        #ebebeb 10px,
-        #f6f6f6 10px,
-        #f6f6f6 20px
+        var.$background,
+        var.$background 10px,
+        var.$white 10px,
+        var.$white 20px
       );
 
       & .panel_roomInfo {
@@ -99,14 +100,41 @@
     }
   }
 
-  &_title {
+  &_title,
+  &_speakers__text,
+  &_description,
+  &_roomInfo {
+    padding: 0.25rem 0.5rem;
+  }
+
+  &_tag {
     margin: 0;
+    padding: 0.5rem;
+    width: 55%;
+    max-width: 175px;
+    background-color: var.$highlight;
+    border-bottom-right-radius: calc(var.$borderR * 8);
+  }
+
+  &_title {
+    margin: var.$grid-gap 0;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: none;
   }
 
   &_speakers {
-    margin: 0.25rem 0 0;
+    margin-top: var.$grid-gap;
+    border-top: 1px dotted var.$black;
+
+    &__text {
+      margin: 0;
+    }
+  }
+
+  &_roomInfo {
+    background-color: var.$black;
+    color: var.$white;
+    text-align: center;
   }
 }
