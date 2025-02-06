@@ -1,0 +1,82 @@
+.timeSlot_grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @media (min-width: 1140px) {
+    grid-template-columns: 90px repeat(4, 1fr);
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.timeslot {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Campton, sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  background-color: #054733;
+  color: #fbf5f3;
+
+  @media (min-width: 1140px) {
+    background-color: #007ea7;
+    color: #fbf5f3;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+  }
+}
+
+.panel {
+  &_title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  &_wrapper {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 0.5rem;
+    background-color: #ecebe9;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &.global {
+      grid-column: 2/-1;
+    }
+  }
+
+  &_container {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+
+    padding: 0.25rem 1rem;
+
+    &.empty {
+      background: repeating-linear-gradient(
+        -45deg,
+        #ebebeb,
+        #ebebeb 10px,
+        #f6f6f6 10px,
+        #f6f6f6 20px
+      );
+
+      & .panel_roomInfo {
+        display: none;
+      }
+
+      @media (max-width: 1140px) {
+        display: none;
+      }
+    }
+  }
+
+  &_speakers {
+    margin: 0.25rem 0 0;
+  }
+}

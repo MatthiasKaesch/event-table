@@ -6,7 +6,6 @@
   }
 }
 
-.maingrid,
 .maingrid_rooms {
   display: grid;
   gap: 1rem;
@@ -49,32 +48,33 @@
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  background-color: #ff5000;
+  background-color: #054733;
+  color: #fbf5f3;
 }
 
-.panel_wrapper {
+/* .panel_wrapper {
   @media (max-width: 1140px) {
     padding: 0 1rem;
   }
-}
+} */
 
-.timeslot,
-.panel_container {
+/* .timeslot, */
+/* .panel_container {
   background-color: #f6f6f6;
   border: 1px solid #f6f6f6;
   padding: 1.25rem;
-}
+} */
 
-.panel_container {
+/* .panel_container {
   height: 100%;
   box-sizing: border-box;
-}
+} */
 
-.panel_container[data-link]:not([data-link='']) {
+/* .panel_container[data-link]:not([data-link='']) {
   cursor: pointer;
-}
+} */
 
-.panel_container__empty {
+/* .panel_container__empty {
   background: repeating-linear-gradient(
     -45deg,
     #ebebeb,
@@ -87,54 +87,40 @@
   @media (max-width: 1140px) {
     display: none;
   }
-}
+} */
 
-.panel_container__empty .panel_roomInfo {
+/* .panel_container__empty .panel_roomInfo {
   display: none;
-}
+} */
 
-.timeslot {
-  margin: 0;
-  font-size: 1rem;
-  font-family: Campton, sans-serif;
-  font-weight: 700;
-  white-space: nowrap;
-  background-color: #fe752e;
-
-  @media (min-width: 1140px) {
-    background-color: #f6f6f6;
-    font-weight: 400;
-  }
-}
-
-.panel_grid {
+/* .panel_grid {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.panel_tag {
+/* .panel_tag {
   font-weight: 700;
   max-width: fit-content;
   margin: 0 0 1.5rem;
   padding: 4px 20px;
   border-radius: 2px;
-  color: #404040;
-  background-color: #dbdbdb;
-}
+  color: #1E1825;
+  background-color: #A4A9F4;
+} */
 
-.panel_title {
+/* .panel_title {
   margin: 0;
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   text-transform: none;
-}
+} */
 
-.panel_speakers {
+/* .panel_speakers {
   margin: 0.25rem 0 0;
-}
+} */
 
-.panel_roomInfo {
+/* .panel_roomInfo {
   margin: 0.5rem 0 0;
   padding-top: 0.5rem;
   color: #f45201;
@@ -143,4 +129,4 @@
   @media (min-width: 1140px) {
     display: none;
   }
-}
+} */

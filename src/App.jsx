@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <h1>Hello World</h1>
+      <h1>FutureFrame: AI & Web Evolution 2025</h1>
       <ul className="list maingrid_rooms" id="rooms">
         {rooms.map((room) => {
           return <li className="roomlist_item griditem">{room.name}</li>
@@ -28,6 +28,7 @@ function App() {
             time={data.timeslot}
             events={data.events}
             rooms={rooms}
+            isGlobal={data.isGlobalEvent}
           />
         )
       })}
