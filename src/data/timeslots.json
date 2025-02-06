@@ -1,6 +1,7 @@
 {
   "timeslot1": {
     "timeslot": "08:00",
+    "isGlobalEvent": true,
     "events": [
       {
         "id": "ts1#001",
@@ -14,6 +15,7 @@
   },
   "timeslot2": {
     "timeslot": "09:00",
+    "isGlobalEvent": false,
     "events": [
       {
         "id": "ts2#001",
@@ -51,6 +53,7 @@
   },
   "timeslot3": {
     "timeslot": "10:30",
+    "isGlobalEvent": true,
     "events": [
       {
         "id": "ts3#001",
@@ -64,6 +67,7 @@
   },
   "timeslot4": {
     "timeslot": "11:00",
+    "isGlobalEvent": false,
     "events": [
       {
         "id": "ts4#001",
@@ -101,6 +105,7 @@
   },
   "timeslot5": {
     "timeslot": "12:30",
+    "isGlobalEvent": true,
     "events": [
       {
         "id": "ts5#001",
@@ -114,6 +119,7 @@
   },
   "timeslot6": {
     "timeslot": "14:00",
+    "isGlobalEvent": false,
     "events": [
       {
         "id": "ts6#001",
@@ -151,6 +157,7 @@
   },
   "timeslot7": {
     "timeslot": "15:30",
+    "isGlobalEvent": true,
     "events": [
       {
         "id": "ts7#001",
@@ -164,6 +171,7 @@
   },
   "timeslot8": {
     "timeslot": "16:00",
+    "isGlobalEvent": false,
     "events": [
       {
         "id": "ts8#001",
@@ -201,6 +209,7 @@
   },
   "timeslot9": {
     "timeslot": "17:00",
+    "isGlobalEvent": true,
     "events": [
       {
         "id": "ts9#001",
