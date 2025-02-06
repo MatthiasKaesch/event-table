@@ -3,14 +3,15 @@ import './Timeslot.scss'
 
 const Timeslot = ({ id, time, events, rooms, isGlobal }) => {
   return (
-    <div className="timeSlot_grid">
-      <h2 className="griditem timeslot">{time}</h2>
-
-      {events.map((event) => {
-        return (
-          <div className={`panel_wrapper ${isGlobal ? 'global' : ''}`}>
+    <div className="panels_maingrid">
+      <h2 className="timeslot">{time}</h2>
+      <div className="panels_wrapper">
+        {events.map((event) => {
+          return (
             <section
-              className={`panel_container ${event.title ? '' : 'empty'}`}
+              className={`panel_container ${event.title ? '' : 'empty'}  ${
+                isGlobal ? 'global' : ''
+              }`}
             >
               {event.tag && (
                 <p
@@ -38,9 +39,9 @@ const Timeslot = ({ id, time, events, rooms, isGlobal }) => {
                 </p>
               )}
             </section>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
     </div>
   )
 }

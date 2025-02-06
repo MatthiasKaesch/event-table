@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
+h1,
+h2,
+h3,
+p,
+.roomlist_item {
+  font-family: Roboto, sans-serif;
+}
+
 .wrapper {
   @media (min-width: 1140px) {
     padding: 3.75rem;
@@ -46,7 +54,6 @@
 
 .roomlist_item {
   text-align: center;
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   background-color: #054733;
   color: #fbf5f3;

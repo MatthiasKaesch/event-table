@@ -12,8 +12,8 @@
 
 .timeslot {
   margin: 0;
+  padding-top: 0.5rem;
   font-size: 1rem;
-  font-family: Campton, sans-serif;
   font-weight: 700;
   white-space: nowrap;
   background-color: #054733;
@@ -28,34 +28,57 @@
   }
 }
 
-.panel {
-  &_title {
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    text-transform: none;
+.panels {
+  &_maingrid {
+    display: grid;
+    margin-top: 1rem;
+
+    @media (min-width: 1140px) {
+      grid-template-columns: 90px 1fr;
+      gap: 1rem;
+    }
   }
 
   &_wrapper {
     display: grid;
-    grid-template-rows: repeat(4, auto);
-    gap: 0.5rem;
-    background-color: #ecebe9;
-    border-radius: 4px;
-    overflow: hidden;
+    gap: 0 1rem;
 
-    &.global {
-      grid-column: 2/-1;
+    //stretch over width of parent grid
+    grid-column: 2/-1;
+
+    //create inner grid-rows for the single events (subgrid)
+    grid-template-rows: repeat(4, auto);
+
+    @media (min-width: 1140px) {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
+}
 
+.panel {
   &_container {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
 
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ecebe9;
+    background-color: #ecebe9;
+
+    @media (min-width: 1140px) {
+      margin-top: 0;
+    }
+
+    &.global {
+      grid-column: 1/-1;
+      align-items: center;
+
+      @media (min-width: 1140px) {
+        border-color: #054733;
+      }
+    }
 
     &.empty {
       background: repeating-linear-gradient(
@@ -74,6 +97,13 @@
         display: none;
       }
     }
+  }
+
+  &_title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: none;
   }
 
   &_speakers {
