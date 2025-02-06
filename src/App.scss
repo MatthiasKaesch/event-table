@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+.wrapper {
+  @media (min-width: 1140px) {
+    padding: 3.75rem;
+  }
+}
+
+.maingrid_rooms {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  box-shadow: 4px 4px 14px 0px #00000014;
+
+  @media (min-width: 1140px) {
+    grid-template-columns: 90px repeat(auto-fit, minmax(0, 1fr));
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.maingrid {
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+
+  @media (min-width: 1140px) {
+    margin-top: 1rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.griditem {
+  padding: 0.75rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+
+  @media (max-width: 1140px) {
+    display: none;
+  }
+}
+
+.roomlist_item {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  background-color: #054733;
+  color: #fbf5f3;
+}
