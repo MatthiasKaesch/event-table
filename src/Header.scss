@@ -1,0 +1,43 @@
+@use './global_styling/variables.scss' as var;
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 4rem;
+  padding: 2rem;
+  background-color: var.$black;
+}
+
+.headline {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg in oklch,
+    #88fbfd,
+    #88fbfd,
+    #f54afd,
+    #f54afd
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: var.$clr-grey-medium;
+
+  &_hero {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+
+  &_location {
+    display: block;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var.$white;
+    -webkit-text-fill-color: var.$white;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+  }
+}

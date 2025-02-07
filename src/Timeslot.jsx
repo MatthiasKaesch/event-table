@@ -1,7 +1,7 @@
 import React from 'react'
 import './Timeslot.scss'
 
-const Timeslot = ({ id, time, events, rooms, isGlobal }) => {
+const Timeslot = ({ time, events, rooms, isGlobal }) => {
   return (
     <div className="panels_maingrid">
       <h2 className="timeslot">{time}</h2>
@@ -9,6 +9,7 @@ const Timeslot = ({ id, time, events, rooms, isGlobal }) => {
         {events.map((event) => {
           return (
             <section
+              key={event.id}
               className={`panel_container ${event.title ? '' : 'empty'}  ${
                 isGlobal ? 'global' : ''
               }`}
