@@ -5,7 +5,7 @@
   gap: var.$grid-gap;
   margin-top: 1rem;
 
-  @media (min-width: 1140px) {
+  @media (min-width: var.$bp-desktop) {
     grid-template-columns: 90px repeat(4, 1fr);
     border: none;
     box-shadow: none;
@@ -21,7 +21,7 @@
   background-color: var.$primary;
   color: var.$black;
 
-  @media (min-width: 1140px) {
+  @media (min-width: var.$bp-desktop) {
     background-color: var.$tertiary;
     border-top-right-radius: var.$borderR;
     border-bottom-right-radius: var.$borderR;
@@ -34,7 +34,7 @@
     display: grid;
     margin-top: 1rem;
 
-    @media (min-width: 1140px) {
+    @media (min-width: var.$bp-desktop) {
       grid-template-columns: 90px 1fr;
       gap: var.$grid-gap;
     }
@@ -50,7 +50,7 @@
     //create inner grid-rows for the single events (subgrid)
     grid-template-rows: repeat(4, auto);
 
-    @media (min-width: 1140px) {
+    @media (min-width: var.$bp-desktop) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -65,27 +65,25 @@
 
     margin-top: var.$grid-gap;
     border-radius: var.$borderR;
-    border: 1px solid var.$background;
-    background-color: var.$background;
+    border: 1px solid var.$background-light;
+    background-color: var.$background-light;
 
-    @media (min-width: 1140px) {
+    @media (min-width: var.$bp-desktop) {
       margin-top: 0;
     }
 
     &.global {
       grid-column: 1/-1;
       align-items: center;
-
-      @media (min-width: 1140px) {
-        border-color: var.$primary;
-      }
+      background-color: var.$tertiary;
+      padding-bottom: var.$grid-gap;
     }
 
     &.empty {
       background: repeating-linear-gradient(
         -45deg,
-        var.$background,
-        var.$background 10px,
+        var.$background-light,
+        var.$background-light 10px,
         var.$white 10px,
         var.$white 20px
       );
@@ -94,7 +92,7 @@
         display: none;
       }
 
-      @media (max-width: 1140px) {
+      @media (max-width: var.$bp-desktop) {
         display: none;
       }
     }

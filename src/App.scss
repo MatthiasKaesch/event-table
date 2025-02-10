@@ -15,7 +15,7 @@ p,
   margin: 0 auto;
   /* background-color: var.$black; */
 
-  @media (min-width: 1140px) {
+  @media (min-width: var.$bp-desktop) {
     width: calc(100% - 32px);
     max-width: 1680px;
     padding: 0 0 3.75rem;
@@ -30,7 +30,7 @@ p,
   border-radius: 8px;
   box-shadow: 4px 4px 14px 0px #00000014;
 
-  @media (min-width: 1140px) {
+  @media (min-width: var.$bp-desktop) {
     grid-template-columns: 90px repeat(auto-fit, minmax(0, 1fr));
     border: none;
     box-shadow: none;
@@ -41,7 +41,7 @@ p,
   margin-top: 3rem;
   padding-bottom: 1rem;
 
-  @media (min-width: 1140px) {
+  @media (min-width: var.$bp-desktop) {
     margin-top: 1rem;
     padding-bottom: 0rem;
   }
@@ -54,7 +54,7 @@ p,
 .list {
   padding-left: 0;
 
-  @media (max-width: 1140px) {
+  @media (max-width: var.$bp-desktop) {
     display: none;
   }
 }

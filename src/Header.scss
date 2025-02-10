@@ -15,15 +15,15 @@
   font-weight: 700;
   background: linear-gradient(
     90deg in oklch,
-    #88fbfd,
-    #88fbfd,
-    #f54afd,
-    #f54afd
+    var.$highlight,
+    var.$highlight,
+    var.$primary,
+    var.$primary
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: var.$clr-grey-medium;
+  background-color: var.$background-medium;
 
   &_hero {
     display: block;

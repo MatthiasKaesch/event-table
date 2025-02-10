@@ -1,10 +1,12 @@
 //colors
-$primary: #ee26f8;
+$primary: #f310a9;
 $secondary: #56c2f4;
 $tertiary: #faf195;
 $black: #1e1825;
 $white: #fbf5f3;
-$background: #ebebeb;
+$background-light: #ebebeb;
+$background-medium: #868686;
+$background-dark: #353535;
 $highlight: #88fbfd;
 
 //grid values
@@ -13,12 +15,5 @@ $grid-gap: 1rem;
 //container values
 $borderR: 6px;
 
-$clr-primary: #3cbdf7;
-$clr-secondary: #db1428;
-$clr-tertiary: #0d043d;
-$clr-deco-dark: #0d1b2a;
-$clr-deco-medium: #1b263b;
-$clr-deco-light: #89a1be;
-$clr-grey-light: #eeeeee;
-$clr-grey-medium: #868686;
-$clr-grey-dark: #353535;
+//breakpoints
+$bp-desktop: 1140px;
