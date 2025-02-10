@@ -4,15 +4,17 @@ import Logo from './assets/images/Logo.webp'
 
 const Header = () => {
   return (
-    <div className="header">
-      <img src={Logo} alt="" />
+    <header className="header">
+      <img className="header_image" src={Logo} alt="FutureFrame Logo" />
       <h1 className="headline">
         <span className="headline_hero">FutureFrame 2025</span>
-        Exploring the Future of AI & Web - Innovations, Trends, and the Next
-        Digital Evolution.
+        <span className="headline_subtitle">
+          Exploring the Future of AI & Web - Innovations, Trends, and the Next
+          Digital Evolution.
+        </span>
         <span className="headline_location">København, Danmark</span>
       </h1>
-    </div>
+    </header>
   )
 }
 
