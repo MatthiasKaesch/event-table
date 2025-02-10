@@ -14,49 +14,87 @@
     ]
   },
   "timeslot2": {
-    "timeslot": "09:00",
+    "timeslot": "08:30",
     "isGlobalEvent": false,
     "events": [
       {
         "id": "ts2#001",
-        "title": "AI in Modern Marketing",
+        "title": "AI and Business",
         "tag": "Panel",
-        "description": "Discover how artificial intelligence is transforming the marketing landscape, enabling personalized experiences, automating processes, and generating insights like never before.",
-        "speakers": ["John Romeo", "Sophia Miller"],
+        "description": "Exploring AI's role in modern business strategies.",
+        "speakers": ["Sophia Miller", "David Casper"],
         "roomNumber": 1
       },
       {
         "id": "ts2#002",
-        "title": "Ethics of AI",
-        "tag": "Talk",
-        "description": "Exploring the ethical boundaries of artificial intelligence.",
-        "speakers": ["Dr. Amanda Lee"],
+        "title": "Machine Learning 101",
+        "tag": "Workshop",
+        "description": "A beginner-friendly introduction to ML concepts.",
+        "speakers": ["John Romeo"],
         "roomNumber": 2
       },
       {
         "id": "ts2#003",
-        "title": "AI-Powered Creativity",
-        "tag": "Workshop",
-        "description": "A hands-on session designed to help attendees explore how AI tools can amplify creativity in art, design, and content creation.",
-        "speakers": ["David Casper"],
+        "title": "Cybersecurity and AI",
+        "tag": "Talk",
+        "description": "How AI is used in modern cybersecurity defenses.",
+        "speakers": ["Aziz Cemrek"],
         "roomNumber": 3
       },
       {
         "id": "ts2#004",
-        "title": "Future Trends in AI",
+        "title": "Future of AI in Transportation",
         "tag": "Panel",
-        "description": "Engage with industry leaders as they discuss emerging AI technologies and their potential impacts on business, society, and daily life.",
-        "speakers": ["Emanuelle Chapon", "Aziz Cemrek"],
+        "description": "Autonomous vehicles and AI-driven logistics.",
+        "speakers": ["Jessica Shaft", "Dr. Amanda Lee"],
         "roomNumber": 4
       }
     ]
   },
   "timeslot3": {
+    "timeslot": "09:30",
+    "isGlobalEvent": false,
+    "events": [
+      {
+        "id": "ts3#001",
+        "title": "AI in Gaming",
+        "tag": "Talk",
+        "description": "How AI is revolutionizing game development.",
+        "speakers": ["David Casper"],
+        "roomNumber": 1
+      },
+      {
+        "id": "ts3#002",
+        "title": "",
+        "tag": "",
+        "description": "",
+        "speakers": [""],
+        "roomNumber": 2
+      },
+      {
+        "id": "ts3#003",
+        "title": "Data Science in AI",
+        "tag": "Workshop",
+        "description": "Hands-on session with real-world AI datasets.",
+        "speakers": ["Roberta Rodriguez"],
+        "roomNumber": 3
+      },
+      {
+        "id": "ts3#004",
+        "title": "AI in Entertainment",
+        "tag": "Panel",
+        "description": "The role of AI in movies, music, and content creation.",
+        "speakers": ["John Romeo", "Aziz Cemrek"],
+        "roomNumber": 4
+      }
+    ]
+  },
+  "timeslot4": {
     "timeslot": "10:30",
     "isGlobalEvent": true,
     "events": [
       {
-        "id": "ts3#001",
+        "id": "ts4#001",
         "title": "Coffee Break",
         "tag": "",
         "description": "",
@@ -65,50 +103,88 @@
       }
     ]
   },
-  "timeslot4": {
+  "timeslot5": {
     "timeslot": "11:00",
     "isGlobalEvent": false,
     "events": [
       {
-        "id": "ts4#001",
-        "title": "The Future of IoT",
-        "tag": "Panel",
-        "description": "Experts share insights into how the Internet of Things will evolve over the next decade and its profound impact on industries and consumers.",
+        "id": "ts5#001",
+        "title": "AI in Finance",
+        "tag": "Talk",
+        "description": "How AI is reshaping the financial industry.",
         "speakers": ["Jessica Shaft"],
         "roomNumber": 1
       },
       {
-        "id": "ts4#002",
+        "id": "ts5#002",
+        "title": "Deep Learning Applications",
+        "tag": "Workshop",
+        "description": "Explore real-world deep learning models.",
+        "speakers": ["Dr. Amanda Lee"],
+        "roomNumber": 2
+      },
+      {
+        "id": "ts5#003",
+        "title": "AI in Smart Cities",
+        "tag": "Panel",
+        "description": "The future of AI in urban development.",
+        "speakers": ["Emanuelle Chapon", "Roberta Rodriguez"],
+        "roomNumber": 3
+      },
+      {
+        "id": "ts5#004",
         "title": "",
         "tag": "",
         "description": "",
         "speakers": [""],
-        "roomNumber": 1
-      },
-      {
-        "id": "ts4#003",
-        "title": "AI in Healthcare",
-        "tag": "Workshop",
-        "description": "Explore real-world examples of AI being used to improve patient outcomes, streamline medical processes, and push the boundaries of healthcare innovation.",
-        "speakers": ["Dr. Maria Chen"],
-        "roomNumber": 3
-      },
-      {
-        "id": "ts4#004",
-        "title": "Data Privacy & AI",
-        "tag": "Panel",
-        "description": "Addressing the pressing concerns around data privacy in the age of AI. This session focuses on strategies for ensuring secure and ethical data practices.",
-        "speakers": ["Aziz Cemrek"],
         "roomNumber": 4
       }
     ]
   },
-  "timeslot5": {
+  "timeslot6": {
+    "timeslot": "12:00",
+    "isGlobalEvent": false,
+    "events": [
+      {
+        "id": "ts6#001",
+        "title": "AI in Journalism",
+        "tag": "Talk",
+        "description": "Automating news generation and content curation.",
+        "speakers": ["John Romeo"],
+        "roomNumber": 1
+      },
+      {
+        "id": "ts6#002",
+        "title": "Healthcare AI",
+        "tag": "Workshop",
+        "description": "AI's role in diagnostics and treatment.",
+        "speakers": ["Dr. Maria Chen"],
+        "roomNumber": 2
+      },
+      {
+        "id": "ts6#003",
+        "title": "",
+        "tag": "",
+        "description": "",
+        "speakers": [""],
+        "roomNumber": 3
+      },
+      {
+        "id": "ts6#004",
+        "title": "Future of AI Hardware",
+        "tag": "Panel",
+        "description": "Advancements in AI chip technology.",
+        "speakers": ["David Casper"],
+        "roomNumber": 4
+      }
+    ]
+  },
+  "timeslot7": {
     "timeslot": "12:30",
     "isGlobalEvent": true,
     "events": [
       {
-        "id": "ts5#001",
+        "id": "ts7#001",
         "title": "Lunch Break",
         "tag": "",
         "description": "",
@@ -117,50 +193,89 @@
       }
     ]
   },
-  "timeslot6": {
-    "timeslot": "14:00",
+
+  "timeslot8": {
+    "timeslot": "13:30",
     "isGlobalEvent": false,
     "events": [
       {
-        "id": "ts6#001",
-        "title": "AI in Retail",
+        "id": "ts8#001",
+        "title": "AI in Finance",
         "tag": "Talk",
-        "description": "Transforming customer experiences with AI.",
-        "speakers": ["Sophia Miller"],
+        "description": "Exploring the impact of AI on financial markets and risk management.",
+        "speakers": ["Emanuelle Chapon"],
         "roomNumber": 1
       },
       {
-        "id": "ts6#002",
-        "title": "AI-Powered Manufacturing",
+        "id": "ts8#002",
+        "title": "AI & Cybersecurity",
         "tag": "Panel",
-        "description": "Discover how artificial intelligence is revolutionizing production lines, from predictive maintenance to fully automated factories.",
-        "speakers": ["David Casper", "Jessica Shaft"],
+        "description": "How AI is revolutionizing cybersecurity strategies and threat detection.",
+        "speakers": ["Aziz Cemrek", "Roberta Rodriguez"],
         "roomNumber": 2
       },
       {
-        "id": "ts6#003",
-        "title": "Building Responsible AI",
+        "id": "ts8#003",
+        "title": "Designing AI Interfaces",
         "tag": "Workshop",
-        "description": "Practical approaches and best practices for creating ethical, fair, and bias-free AI systems. This workshop will provide actionable strategies and case studies.",
-        "speakers": ["Dr. Amanda Lee"],
+        "description": "Best practices for creating intuitive and ethical AI-driven user interfaces.",
+        "speakers": ["David Casper"],
         "roomNumber": 3
       },
       {
-        "id": "ts6#004",
-        "title": "AI in Education",
+        "id": "ts8#004",
+        "title": "AI & Legal Tech",
         "tag": "Panel",
-        "description": "How AI is enhancing learning experiences.",
-        "speakers": ["Emanuelle Chapon"],
+        "description": "The evolving role of AI in the legal industry and contract automation.",
+        "speakers": ["Dr. Amanda Lee"],
         "roomNumber": 4
       }
     ]
   },
-  "timeslot7": {
+  "timeslot9": {
+    "timeslot": "14:30",
+    "isGlobalEvent": false,
+    "events": [
+      {
+        "id": "ts9#001",
+        "title": "AI in Gaming",
+        "tag": "Talk",
+        "description": "How AI is shaping game development and procedural content generation.",
+        "speakers": ["Sophia Miller"],
+        "roomNumber": 1
+      },
+      {
+        "id": "ts9#002",
+        "title": "AI & Mental Health",
+        "tag": "Panel",
+        "description": "Using AI to improve mental health support and early diagnosis.",
+        "speakers": ["John Romeo", "Jessica Shaft"],
+        "roomNumber": 2
+      },
+      {
+        "id": "ts9#003",
+        "title": "AI-Driven Marketing Automation",
+        "tag": "Workshop",
+        "description": "Hands-on strategies for leveraging AI in marketing campaigns.",
+        "speakers": ["Emanuelle Chapon"],
+        "roomNumber": 3
+      },
+      {
+        "id": "ts9#004",
+        "title": "The Future of NLP",
+        "tag": "Panel",
+        "description": "Recent breakthroughs and trends in natural language processing.",
+        "speakers": ["Dr. Maria Chen", "Aziz Cemrek"],
+        "roomNumber": 4
+      }
+    ]
+  },
+  "timeslot10": {
     "timeslot": "15:30",
     "isGlobalEvent": true,
     "events": [
       {
-        "id": "ts7#001",
+        "id": "ts10#001",
         "title": "Coffee Break",
         "tag": "",
         "description": "",
@@ -169,53 +284,91 @@
       }
     ]
   },
-  "timeslot8": {
+  "timeslot11": {
     "timeslot": "16:00",
     "isGlobalEvent": false,
     "events": [
       {
-        "id": "ts8#001",
+        "id": "ts11#001",
         "title": "Scaling AI Solutions",
         "tag": "Talk",
-        "description": "Discover strategies for implementing AI at scale across global organizations while maintaining flexibility and adaptability.",
+        "description": "Strategies for implementing AI at scale.",
         "speakers": ["Sophia Miller"],
         "roomNumber": 1
       },
       {
-        "id": "ts8#002",
+        "id": "ts11#002",
         "title": "AI for Social Good",
         "tag": "Panel",
-        "description": "A discussion on how AI can be leveraged to solve global challenges, including climate change, healthcare accessibility, and education.",
+        "description": "How AI can tackle global challenges like climate change and healthcare.",
         "speakers": ["John Romeo", "Roberta Rodriguez"],
         "roomNumber": 2
       },
       {
-        "id": "ts8#003",
+        "id": "ts11#003",
         "title": "The AI Startup Journey",
         "tag": "Workshop",
-        "description": "Practical advice for entrepreneurs and startups looking to leverage AI in their products or services.",
+        "description": "Advice for entrepreneurs using AI.",
         "speakers": ["David Casper"],
         "roomNumber": 3
       },
       {
-        "id": "ts8#004",
+        "id": "ts11#004",
         "title": "Interactive Q&A with AI Experts",
         "tag": "Interactive",
-        "description": "A unique opportunity to ask your burning questions directly to leading AI experts and innovators.",
+        "description": "Ask your burning AI questions.",
         "speakers": ["Jessica Shaft", "Aziz Cemrek"],
         "roomNumber": 4
       }
     ]
   },
-  "timeslot9": {
+  "timeslot12": {
     "timeslot": "17:00",
+    "isGlobalEvent": false,
+    "events": [
+      {
+        "id": "ts12#001",
+        "title": "AI & Robotics",
+        "tag": "Talk",
+        "description": "How AI is advancing robotics and automation.",
+        "speakers": ["Dr. Amanda Lee"],
+        "roomNumber": 1
+      },
+      {
+        "id": "ts12#002",
+        "title": "AI in Journalism",
+        "tag": "Panel",
+        "description": "The impact of AI on media and news generation.",
+        "speakers": ["Jessica Shaft", "Roberta Rodriguez"],
+        "roomNumber": 2
+      },
+      {
+        "id": "ts12#003",
+        "title": "Generative AI Tools",
+        "tag": "Workshop",
+        "description": "Hands-on session on AI-powered content creation.",
+        "speakers": ["David Casper"],
+        "roomNumber": 3
+      },
+      {
+        "id": "ts12#004",
+        "title": "Bias & Fairness in AI",
+        "tag": "Panel",
+        "description": "Addressing biases in AI models and their societal impact.",
+        "speakers": ["Emanuelle Chapon", "Aziz Cemrek"],
+        "roomNumber": 4
+      }
+    ]
+  },
+  "timeslot13": {
+    "timeslot": "18:00",
     "isGlobalEvent": true,
     "events": [
       {
-        "id": "ts9#001",
+        "id": "ts13#001",
         "title": "Get-Together",
         "tag": "",
-        "description": "Wrap up the day with an informal gathering, enjoy light refreshments, and connect with speakers, organizers, and fellow attendees.",
+        "description": "Wrap up the day with networking and refreshments.",
         "speakers": [""],
         "roomNumber": 0
       }
