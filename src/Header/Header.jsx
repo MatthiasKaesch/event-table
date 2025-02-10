@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import Logo from './assets/images/Logo.webp'
+import Logo from '../assets/images/Logo.webp'
 
 const Header = () => {
   return (

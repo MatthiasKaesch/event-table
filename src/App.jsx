@@ -3,8 +3,9 @@ import timeSlotsData from './data/timeslots.json'
 import './global_styling/normalize.css'
 import './App.scss'
 
-import Header from './Header'
-import Timeslot from './Timeslot'
+import Header from './Header/Header'
+import Roomlist from './Roomlist/Roomlist'
+import Timeslot from './Timeslot/Timeslot'
 
 function App() {
   // Convert timeslots object to an array
@@ -17,16 +18,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-
-      <ul role="list" className="list maingrid_rooms" id="rooms">
-        {rooms.map((room) => {
-          return (
-            <li className="roomlist_item griditem" key={room.name}>
-              {room.name}
-            </li>
-          )
-        })}
-      </ul>
+      <Roomlist rooms={rooms} />
 
       {timeslots.map((data) => {
         return (
