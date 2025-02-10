@@ -59,7 +59,7 @@
         "id": "ts3#001",
         "title": "AI in Gaming",
         "tag": "Talk",
-        "description": "How AI is revolutionizing game development.",
+        "description": "How AI is revolutionizing game development by enabling smarter NPC behavior, procedural content generation, and adaptive difficulty balancing for a more immersive player experience.",
         "speakers": ["David Casper"],
         "roomNumber": 1
       },
@@ -127,7 +127,7 @@
         "id": "ts5#003",
         "title": "AI in Smart Cities",
         "tag": "Panel",
-        "description": "The future of AI in urban development.",
+        "description": "The future of AI in urban development and how smart cities are leveraging machine learning to optimize traffic flow, energy consumption, and public safety.",
         "speakers": ["Emanuelle Chapon", "Roberta Rodriguez"],
         "roomNumber": 3
       },
@@ -202,7 +202,7 @@
         "id": "ts8#001",
         "title": "AI in Finance",
         "tag": "Talk",
-        "description": "Exploring the impact of AI on financial markets and risk management.",
+        "description": "Exploring the impact of AI on financial markets and risk management, including predictive analytics, automated trading, and fraud detection.",
         "speakers": ["Emanuelle Chapon"],
         "roomNumber": 1
       },
@@ -248,7 +248,7 @@
         "id": "ts9#002",
         "title": "AI & Mental Health",
         "tag": "Panel",
-        "description": "Using AI to improve mental health support and early diagnosis.",
+        "description": "Using AI to improve mental health support and early diagnosis through sentiment analysis, personalized virtual therapists, and real-time emotional tracking.",
         "speakers": ["John Romeo", "Jessica Shaft"],
         "roomNumber": 2
       },
@@ -300,7 +300,7 @@
         "id": "ts11#002",
         "title": "AI for Social Good",
         "tag": "Panel",
-        "description": "How AI can tackle global challenges like climate change and healthcare.",
+        "description": "How AI helps tackle global challenges like climate change and healthcare by optimizing energy use and improving disease detection.",
         "speakers": ["John Romeo", "Roberta Rodriguez"],
         "roomNumber": 2
       },
@@ -354,7 +354,7 @@
         "id": "ts12#004",
         "title": "Bias & Fairness in AI",
         "tag": "Panel",
-        "description": "Addressing biases in AI models and their societal impact.",
+        "description": "Addressing biases in AI models and their societal impact, exploring methods for reducing discrimination in machine learning systems and ensuring fairer outcomes.",
         "speakers": ["Emanuelle Chapon", "Aziz Cemrek"],
         "roomNumber": 4
       }
