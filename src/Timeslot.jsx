@@ -32,7 +32,7 @@ const Timeslot = ({ time, events, rooms, isGlobal }) => {
               {event.speakers?.filter((speaker) => speaker.trim() !== '')
                 .length > 0 && (
                 <div className="panel_speakers">
-                  <p className="panel_speakers__text">Speakers:</p>
+                  <p className="panel_speakers__text title">Speakers:</p>
                   <p className="panel_speakers__text">
                     {event.speakers.join(', ')}
                   </p>

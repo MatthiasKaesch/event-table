@@ -23,6 +23,7 @@
 
   @media (min-width: var.$bp-desktop) {
     background-color: var.$tertiary;
+    outline: 2px solid var.$tertiary;
     border-top-right-radius: var.$borderR;
     border-bottom-right-radius: var.$borderR;
     text-align: center;
@@ -46,7 +47,6 @@
 
     //stretch over width of parent grid
     grid-column: 2/-1;
-
     //create inner grid-rows for the single events (subgrid)
     grid-template-rows: repeat(4, auto);
 
@@ -61,11 +61,10 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
-    overflow: hidden;
-
-    margin-top: var.$grid-gap;
     border-radius: var.$borderR;
-    border: 1px solid var.$background-light;
+
+    border: var.$border-width solid var.$white;
+    outline: var.$outline-width solid var.$secondary;
     background-color: var.$background-light;
 
     @media (min-width: var.$bp-desktop) {
@@ -75,8 +74,9 @@
     &.global {
       grid-column: 1/-1;
       align-items: center;
-      background-color: var.$tertiary;
-      padding-bottom: var.$grid-gap;
+      background: linear-gradient(7deg, var.$tertiary 20%, var.$primary);
+      border: var.$border-width solid var.$white;
+      outline: var.$outline-width solid var.$primary;
     }
 
     &.empty {
@@ -100,8 +100,7 @@
 
   &_title,
   &_speakers__text,
-  &_description,
-  &_roomInfo {
+  &_description {
     padding: 0.25rem 0.5rem;
   }
 
@@ -112,6 +111,7 @@
     max-width: 175px;
     background: linear-gradient(25deg, var.$highlight, var.$secondary);
     border-bottom-right-radius: calc(var.$borderR * 8);
+    border-top-left-radius: var.$borderR;
   }
 
   &_title {
@@ -124,6 +124,11 @@
   &_speakers {
     margin-top: var.$grid-gap;
     border-top: 1px dotted var.$black;
+    padding-bottom: 1rem;
+
+    & .title {
+      font-weight: 700;
+    }
 
     &__text {
       margin: 0;
@@ -131,8 +136,12 @@
   }
 
   &_roomInfo {
-    background-color: var.$black;
-    color: var.$white;
+    padding: 0.5rem;
+    background-color: var.$background-medium;
+    color: var.$black;
     text-align: center;
+    font-weight: 700;
+    border-bottom-right-radius: var.$borderR;
+    border-bottom-left-radius: var.$borderR;
   }
 }

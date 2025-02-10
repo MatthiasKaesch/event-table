@@ -3,9 +3,9 @@ $primary: #f310a9;
 $secondary: #56c2f4;
 $tertiary: #faf195;
 $black: #1e1825;
-$white: #fbf5f3;
+$white: #f0f0f0;
 $background-light: #ebebeb;
-$background-medium: #868686;
+$background-medium: #adadad;
 $background-dark: #353535;
 $highlight: #88fbfd;
 
@@ -17,3 +17,7 @@ $borderR: 6px;
 
 //breakpoints
 $bp-desktop: 1140px;
+
+//frame border sizes
+$border-width: 3px;
+$outline-width: 2px;
