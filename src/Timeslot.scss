@@ -19,10 +19,10 @@
   font-weight: 700;
   white-space: nowrap;
   background-color: var.$primary;
-  color: var.$white;
+  color: var.$black;
 
   @media (min-width: 1140px) {
-    background-color: var.$secondary;
+    background-color: var.$tertiary;
     border-top-right-radius: var.$borderR;
     border-bottom-right-radius: var.$borderR;
     text-align: center;
@@ -112,7 +112,7 @@
     padding: 0.5rem;
     width: 55%;
     max-width: 175px;
-    background-color: var.$highlight;
+    background: linear-gradient(25deg, var.$highlight, var.$secondary);
     border-bottom-right-radius: calc(var.$borderR * 8);
   }
 
