@@ -19,7 +19,7 @@ body {
   margin-inline: auto;
   background-color: var(--black);
 
-  @media (min-width: bp.$desktop) {
+  @media (min-width: bp.$tablet) {
     width: calc(100% - 32px);
     max-width: 1680px;
     padding: 0 1rem 3.75rem;

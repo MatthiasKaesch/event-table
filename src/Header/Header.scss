@@ -11,7 +11,7 @@
   background-color: var(--black);
   text-align: center;
 
-  @media (min-width: bp.$desktop) {
+  @media (min-width: bp.$tablet) {
     flex-wrap: nowrap;
     text-align: left;
     max-width: 80%;
@@ -23,7 +23,7 @@
     height: auto;
     object-fit: contain;
 
-    @media (min-width: bp.$desktop) {
+    @media (min-width: bp.$tablet) {
       max-width: 15%;
     }
   }
@@ -49,7 +49,7 @@
   -webkit-text-fill-color: transparent;
   background-color: var(--background-medium);
 
-  @media (min-width: bp.$desktop) {
+  @media (min-width: bp.$tablet) {
     align-items: flex-start;
     text-align: left;
   }
@@ -59,7 +59,7 @@
     margin-bottom: 0.5rem;
     font-size: 3rem;
 
-    @media (min-width: bp.$desktop) {
+    @media (min-width: bp.$tablet) {
       display: block;
       font-size: 4rem;
     }
