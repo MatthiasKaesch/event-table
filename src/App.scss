@@ -15,8 +15,8 @@ body {
 }
 
 .wrapper {
-  width: calc(100% - 20px);
-  margin: 0 auto;
+  width: calc(100% - 12px);
+  margin-inline: auto;
   background-color: var(--black);
 
   @media (min-width: bp.$desktop) {

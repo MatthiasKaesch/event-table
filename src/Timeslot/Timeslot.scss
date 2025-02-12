@@ -21,42 +21,51 @@
   white-space: nowrap;
   background-color: var(--tertiary);
   color: var(--black);
+  border-radius: var(--borderR);
+  border: var(--border-width) solid var(--white);
+  outline: var(--outline-width) solid var(--primary);
 
   @media (min-width: bp.$desktop) {
     font-size: 1.25rem;
     padding-top: var(--grid-gap);
     outline: 2px solid var(--tertiary);
-    border-top-right-radius: var(--borderR);
-    border-bottom-right-radius: var(--borderR);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
 .panels {
   &_maingrid {
     display: grid;
-    margin-top: 1rem;
-    padding: 0 1rem;
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
     gap: var(--grid-gap) 0;
+
+    background-color: var(--background-dark);
+    border: 8px solid var(--black);
+    border-radius: calc(var(--borderR) * 3);
 
     @media (min-width: bp.$desktop) {
       grid-template-columns: 90px 1fr;
       gap: var(--grid-gap);
+      margin-top: 1rem;
       padding: 0;
+      background-color: var(--black);
+      border: none;
     }
   }
 
   &_wrapper {
-    display: grid;
-    /*  gap: var(--grid-gap) 0; */
-
-    //stretch over width of parent grid
-    grid-column: 2/-1;
-    //create inner grid-rows for the single events (subgrid)
-    grid-template-rows: repeat(4, auto);
-
     @media (min-width: bp.$desktop) {
-      gap: 0 var(--grid-gap);
+      display: grid;
+
+      //stretch over width of parent grid
+      grid-column: 2/-1;
+      //create inner grid-rows for the single events (subgrid)
+      grid-template-rows: repeat(4, auto);
+
       grid-template-columns: repeat(4, 1fr);
+      gap: 0 var(--grid-gap);
     }
   }
 }
@@ -66,13 +75,14 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
+    margin-top: var(--grid-gap);
     border-radius: var(--borderR);
 
     border: var(--border-width) solid var(--white);
     outline: var(--outline-width) solid var(--secondary);
     background-color: var(--background-light);
 
-    @media (min-width: bp.$desktop) {
+    @media (min-width: bp.$tablet) {
       margin-top: 0;
     }
 
@@ -98,7 +108,7 @@
         display: none;
       }
 
-      @media (max-width: var(--bp-desktop)) {
+      @media (max-width: bp.$tablet) {
         display: none;
       }
     }
