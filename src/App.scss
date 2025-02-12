@@ -1,4 +1,4 @@
-@use './global_styling/variables.scss' as var;
+@use './global_styling/breakpoints' as bp;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
@@ -11,15 +11,15 @@ p,
 }
 
 body {
-  background-color: var.$background-dark;
+  background-color: var(--background-dark);
 }
 
 .wrapper {
   width: calc(100% - 20px);
   margin: 0 auto;
-  background-color: var.$black;
+  background-color: var(--black);
 
-  @media (min-width: var.$bp-desktop) {
+  @media (min-width: bp.$desktop) {
     width: calc(100% - 32px);
     max-width: 1680px;
     padding: 0 1rem 3.75rem;

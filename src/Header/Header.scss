@@ -1,4 +1,4 @@
-@use '../global_styling/variables' as var;
+@use '../global_styling/breakpoints' as bp;
 
 .header {
   display: flex;
@@ -8,10 +8,10 @@
   position: relative;
   gap: 2rem;
   padding: 2rem;
-  background-color: var.$black;
+  background-color: var(--black);
   text-align: center;
 
-  @media (min-width: var.$bp-desktop) {
+  @media (min-width: bp.$desktop) {
     flex-wrap: nowrap;
     text-align: left;
     max-width: 80%;
@@ -23,7 +23,7 @@
     height: auto;
     object-fit: contain;
 
-    @media (min-width: var.$bp-desktop) {
+    @media (min-width: bp.$desktop) {
       max-width: 15%;
     }
   }
@@ -39,17 +39,17 @@
   font-weight: 700;
   background: linear-gradient(
     90deg in oklch,
-    var.$highlight,
-    var.$highlight,
-    var.$primary,
-    var.$primary
+    var(--highlight),
+    var(--highlight),
+    var(--primary),
+    var(--primary)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: var.$background-medium;
+  background-color: var(--background-medium);
 
-  @media (min-width: var.$bp-desktop) {
+  @media (min-width: bp.$desktop) {
     align-items: flex-start;
     text-align: left;
   }
@@ -59,7 +59,7 @@
     margin-bottom: 0.5rem;
     font-size: 3rem;
 
-    @media (min-width: var.$bp-desktop) {
+    @media (min-width: bp.$desktop) {
       display: block;
       font-size: 4rem;
     }
@@ -74,8 +74,8 @@
     display: block;
     margin-top: 2rem;
     font-size: 1.5rem;
-    color: var.$white;
-    -webkit-text-fill-color: var.$white;
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
     background-clip: unset;
     -webkit-background-clip: unset;
   }

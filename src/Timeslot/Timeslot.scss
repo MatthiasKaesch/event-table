@@ -1,11 +1,11 @@
-@use '../global_styling/variables' as var;
+@use '../global_styling/breakpoints' as bp;
 
 .timeSlot_grid {
   display: grid;
-  gap: var.$grid-gap;
+  gap: var(--grid-gap);
   margin-top: 1rem;
 
-  @media (min-width: var.$bp-desktop) {
+  @media (min-width: bp.$desktop) {
     grid-template-columns: 90px repeat(4, 1fr);
     border: none;
     box-shadow: none;
@@ -14,19 +14,20 @@
 
 .timeslot {
   margin: 0;
-  padding-top: var.$grid-gap;
-  font-size: 1.25rem;
+  padding: var(--grid-gap) 0;
+  font-size: 2rem;
   font-weight: 700;
+  text-align: center;
   white-space: nowrap;
-  background-color: var.$primary;
-  color: var.$black;
+  background-color: var(--tertiary);
+  color: var(--black);
 
-  @media (min-width: var.$bp-desktop) {
-    background-color: var.$tertiary;
-    outline: 2px solid var.$tertiary;
-    border-top-right-radius: var.$borderR;
-    border-bottom-right-radius: var.$borderR;
-    text-align: center;
+  @media (min-width: bp.$desktop) {
+    font-size: 1.25rem;
+    padding-top: var(--grid-gap);
+    outline: 2px solid var(--tertiary);
+    border-top-right-radius: var(--borderR);
+    border-bottom-right-radius: var(--borderR);
   }
 }
 
@@ -34,25 +35,27 @@
   &_maingrid {
     display: grid;
     margin-top: 1rem;
-    gap: var.$grid-gap 0;
+    padding: 0 1rem;
+    gap: var(--grid-gap) 0;
 
-    @media (min-width: var.$bp-desktop) {
+    @media (min-width: bp.$desktop) {
       grid-template-columns: 90px 1fr;
-      gap: var.$grid-gap;
+      gap: var(--grid-gap);
+      padding: 0;
     }
   }
 
   &_wrapper {
     display: grid;
-    /*  gap: var.$grid-gap 0; */
+    /*  gap: var(--grid-gap) 0; */
 
     //stretch over width of parent grid
     grid-column: 2/-1;
     //create inner grid-rows for the single events (subgrid)
     grid-template-rows: repeat(4, auto);
 
-    @media (min-width: var.$bp-desktop) {
-      gap: 0 var.$grid-gap;
+    @media (min-width: bp.$desktop) {
+      gap: 0 var(--grid-gap);
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -63,38 +66,39 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
-    border-radius: var.$borderR;
+    border-radius: var(--borderR);
 
-    border: var.$border-width solid var.$white;
-    outline: var.$outline-width solid var.$secondary;
-    background-color: var.$background-light;
+    border: var(--border-width) solid var(--white);
+    outline: var(--outline-width) solid var(--secondary);
+    background-color: var(--background-light);
 
-    @media (min-width: var.$bp-desktop) {
+    @media (min-width: bp.$desktop) {
       margin-top: 0;
     }
 
     &.global {
       grid-column: 1/-1;
       align-items: center;
-      background: linear-gradient(7deg, var.$tertiary 20%, var.$primary);
-      border: var.$border-width solid var.$white;
-      outline: var.$outline-width solid var.$primary;
+      background: linear-gradient(7deg, var(--tertiary) 20%, var(--primary));
+      border: var(--border-width) solid var(--white);
+      outline: var(--outline-width) solid var(--primary);
+      text-align: center;
     }
 
     &.empty {
       background: repeating-linear-gradient(
         -45deg,
-        var.$background-light,
-        var.$background-light 10px,
-        var.$white 10px,
-        var.$white 20px
+        var(--background-light),
+        var(--background-light) 10px,
+        var(--white) 10px,
+        var(--white) 20px
       );
 
       & .panel_roomInfo {
         display: none;
       }
 
-      @media (max-width: var.$bp-desktop) {
+      @media (max-width: var(--bp-desktop)) {
         display: none;
       }
     }
@@ -111,21 +115,21 @@
     padding: 0.5rem;
     width: 55%;
     max-width: 175px;
-    background: linear-gradient(25deg, var.$highlight, var.$secondary);
-    border-bottom-right-radius: calc(var.$borderR * 8);
-    border-top-left-radius: var.$borderR;
+    background: linear-gradient(25deg, var(--highlight), var(--secondary));
+    border-bottom-right-radius: calc(var(--borderR) * 8);
+    border-top-left-radius: var(--borderR);
   }
 
   &_title {
-    margin: var.$grid-gap 0;
+    margin: var(--grid-gap) 0;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: none;
   }
 
   &_speakers {
-    margin-top: var.$grid-gap;
-    border-top: 1px dotted var.$black;
+    margin-top: var(--grid-gap);
+    border-top: 1px dotted var(--black);
     padding-bottom: 1rem;
 
     & .title {
@@ -139,11 +143,11 @@
 
   &_roomInfo {
     padding: 0.5rem;
-    background-color: var.$background-medium;
-    color: var.$black;
+    background-color: var(--background-medium);
+    color: var(--black);
     text-align: center;
     font-weight: 700;
-    border-bottom-right-radius: var.$borderR;
-    border-bottom-left-radius: var.$borderR;
+    border-bottom-right-radius: var(--borderR);
+    border-bottom-left-radius: var(--borderR);
   }
 }

@@ -1,4 +1,4 @@
-@use '../global_styling/variables' as var;
+@use '../global_styling/breakpoints' as bp;
 
 .maingrid_rooms {
   display: grid;
@@ -8,7 +8,7 @@
   border-radius: 8px;
   box-shadow: 4px 4px 14px 0px #00000014;
 
-  @media (min-width: var.$bp-desktop) {
+  @media (min-width: bp.$desktop) {
     grid-template-columns: 90px repeat(auto-fit, minmax(0, 1fr));
     border: none;
     box-shadow: none;
@@ -19,7 +19,7 @@
   margin-top: 3rem;
   padding-bottom: 1rem;
 
-  @media (min-width: var.$bp-desktop) {
+  @media (min-width: bp.$desktop) {
     margin-top: 1rem;
     padding-bottom: 0rem;
   }
@@ -32,7 +32,7 @@
 .list {
   padding-left: 0;
 
-  @media (max-width: var.$bp-desktop) {
+  @media (max-width: bp.$desktop) {
     display: none;
   }
 }
@@ -40,6 +40,6 @@
 .roomlist_item {
   text-align: center;
   font-weight: 700;
-  background-color: var.$primary;
-  color: var.$white;
+  background-color: var(--primary);
+  color: var(--white);
 }
