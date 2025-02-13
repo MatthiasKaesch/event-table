@@ -6,7 +6,7 @@
       {
         "id": "ts1#001",
         "title": "Welcome & Introduction",
-        "tag": "",
+        "tag": "welcome",
         "description": "",
         "speakers": [""],
         "roomNumber": 0
@@ -96,7 +96,7 @@
       {
         "id": "ts4#001",
         "title": "Coffee Break",
-        "tag": "",
+        "tag": "coffee",
         "description": "",
         "speakers": [""],
         "roomNumber": 0
@@ -186,7 +186,7 @@
       {
         "id": "ts7#001",
         "title": "Lunch Break",
-        "tag": "",
+        "tag": "lunch",
         "description": "",
         "speakers": [""],
         "roomNumber": 0
@@ -277,7 +277,7 @@
       {
         "id": "ts10#001",
         "title": "Coffee Break",
-        "tag": "",
+        "tag": "coffee",
         "description": "",
         "speakers": [""],
         "roomNumber": 0
@@ -367,7 +367,7 @@
       {
         "id": "ts13#001",
         "title": "Get-Together",
-        "tag": "",
+        "tag": "together",
         "description": "",
         "speakers": [""],
         "roomNumber": 0
