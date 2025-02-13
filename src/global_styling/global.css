@@ -10,17 +10,31 @@
   --background-dark: #353535;
   --highlight: #88fbfd;
 
-  /* Grid values */
-  --grid-gap: 1rem;
+  --textColorDark: var(--black);
+  --textColorLight: var(--white);
+  --borderStepColor: var(--white);
 
-  /* Container values */
-  --borderR: 6px;
+  /* Grid spacing */
+  --gridGap: 1rem;
 
   /* Breakpoints */
   --bp-desktop: 1140px;
   --bp-tablet: 1140px;
 
-  /* Frame border sizes */
-  --border-width: 3px;
-  --outline-width: 2px;
+  /* Border values */
+  --borderRadius: 6px;
+  --borderWidth: 3px;
+  --outlineWidth: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --primary: #330a0f;
+  --secondary: #0b76a8;
+  --tertiary: #4e4904;
+*/
+    --borderStepColor: var(--background-dark);
+    /*     --textColorDark: var(--white);
+--textColorLight: var(--black); */
+  }
 }

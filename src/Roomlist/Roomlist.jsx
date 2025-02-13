@@ -3,10 +3,10 @@ import './Roomlist.scss'
 
 const Roomlist = ({ rooms }) => {
   return (
-    <ul role="list" className="list maingrid_rooms" id="rooms">
+    <ul role="list" className="rooms_list">
       {rooms.map((room) => {
         return (
-          <li className="roomlist_item griditem" key={room.name}>
+          <li className="rooms_list__item" key={room.name}>
             {room.name}
           </li>
         )

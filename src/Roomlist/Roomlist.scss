@@ -1,45 +1,33 @@
 @use '../global_styling/breakpoints' as bp;
 
-.maingrid_rooms {
+// This are the roomlist styles for landscape layout
+// The mobile room display styles are in Timeslot.scss
+
+.rooms_list {
   display: grid;
+  grid-template-columns: 90px repeat(auto-fit, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  box-shadow: 4px 4px 14px 0px #00000014;
-
-  @media (min-width: bp.$tablet) {
-    grid-template-columns: 90px repeat(auto-fit, minmax(0, 1fr));
-    border: none;
-    box-shadow: none;
-  }
-}
-
-.maingrid {
-  margin-top: 3rem;
-  padding-bottom: 1rem;
-
-  @media (min-width: bp.$tablet) {
-    margin-top: 1rem;
-    padding-bottom: 0rem;
-  }
-}
-
-.griditem {
-  padding: 0.75rem;
-}
-
-.list {
   padding-left: 0;
 
   @media (max-width: bp.$tablet) {
     display: none;
   }
-}
 
-.roomlist_item {
-  text-align: center;
-  font-weight: 700;
-  background-color: var(--primary);
-  color: var(--white);
+  &__item {
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--primary);
+    color: var(--textColorLight);
+    border: var(--borderWidth) solid var(--black);
+    outline: var(--outlineWidth) solid var(--primary);
+    border-bottom-right-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+    border-top-color: var(--primary);
+  }
+
+  &__item:first-child {
+    border-bottom-left-radius: 0;
+    border-left-color: var(--primary);
+  }
 }

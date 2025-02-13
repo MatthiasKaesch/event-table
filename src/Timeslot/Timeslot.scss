@@ -2,7 +2,7 @@
 
 .timeSlot_grid {
   display: grid;
-  gap: var(--grid-gap);
+  gap: var(--gridGap);
   margin-top: 1rem;
 
   @media (min-width: bp.$tablet) {
@@ -14,23 +14,24 @@
 
 .timeslot {
   margin: 0;
-  padding: var(--grid-gap) 0;
+  padding: var(--gridGap) 0;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
   background-color: var(--tertiary);
-  color: var(--black);
-  border-radius: var(--borderR);
-  border: var(--border-width) solid var(--white);
-  outline: var(--outline-width) solid var(--primary);
+  color: var(--textColorDark);
+  border: var(--borderWidth) solid var(--borderStepColor);
+  outline: var(--outlineWidth) solid var(--primary);
+  border-radius: var(--borderRadius);
 
   @media (min-width: bp.$tablet) {
     font-size: 1.25rem;
-    padding-top: var(--grid-gap);
+    padding-top: var(--gridGap);
     outline: 2px solid var(--tertiary);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    border-left-color: var(--tertiary);
   }
 }
 
@@ -39,15 +40,15 @@
     display: grid;
     margin-top: 2rem;
     padding: 0.5rem;
-    gap: var(--grid-gap) 0;
+    gap: var(--gridGap) 0;
 
     background-color: var(--background-dark);
     border: 8px solid var(--black);
-    border-radius: calc(var(--borderR) * 3);
+    border-radius: calc(var(--borderRadius) * 3);
 
     @media (min-width: bp.$tablet) {
       grid-template-columns: 90px 1fr;
-      gap: var(--grid-gap);
+      gap: var(--gridGap);
       margin-top: 1rem;
       padding: 0;
       background-color: var(--black);
@@ -65,7 +66,7 @@
       grid-template-rows: repeat(4, auto);
 
       grid-template-columns: repeat(4, 1fr);
-      gap: 0 var(--grid-gap);
+      gap: 0 var(--gridGap);
     }
   }
 }
@@ -75,11 +76,11 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
-    margin-top: var(--grid-gap);
-    border-radius: var(--borderR);
+    margin-top: var(--gridGap);
+    border-radius: var(--borderRadius);
 
-    border: var(--border-width) solid var(--white);
-    outline: var(--outline-width) solid var(--secondary);
+    border: var(--borderWidth) solid var(--borderStepColor);
+    outline: var(--outlineWidth) solid var(--secondary);
     background-color: var(--background-light);
 
     @media (min-width: bp.$tablet) {
@@ -93,8 +94,8 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(7deg, var(--tertiary) 20%, var(--primary));
-      border: var(--border-width) solid var(--white);
-      outline: var(--outline-width) solid var(--primary);
+      border: var(--borderWidth) solid var(--black);
+      outline: var(--outlineWidth) solid var(--primary);
 
       & .panel_tag {
         display: none;
@@ -143,19 +144,19 @@
     width: 55%;
     max-width: 175px;
     background: linear-gradient(25deg, var(--highlight), var(--secondary));
-    border-bottom-right-radius: calc(var(--borderR) * 8);
-    border-top-left-radius: var(--borderR);
+    border-bottom-right-radius: calc(var(--borderRadius) * 8);
+    border-top-left-radius: var(--borderRadius);
   }
 
   &_title {
-    margin: var(--grid-gap) 0;
+    margin: var(--gridGap) 0;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: none;
   }
 
   &_speakers {
-    margin-top: var(--grid-gap);
+    margin-top: var(--gridGap);
     border-top: 1px dotted var(--black);
     padding-bottom: 1rem;
 
@@ -171,11 +172,11 @@
   &_roomInfo {
     padding: 0.5rem;
     background-color: var(--background-medium);
-    color: var(--black);
+    color: var(--textColorDark);
     text-align: center;
     font-weight: 700;
-    border-bottom-right-radius: var(--borderR);
-    border-bottom-left-radius: var(--borderR);
+    border-bottom-right-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
 
     @media (min-width: bp.$tablet) {
       display: none;
