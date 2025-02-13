@@ -38,7 +38,7 @@
   &_maingrid {
     display: grid;
     margin-top: 2rem;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
     gap: var(--grid-gap) 0;
 
     background-color: var(--background-dark);
@@ -109,7 +109,6 @@
       & .panel_title {
         display: inline-block;
         width: fit-content;
-        font-size: 2rem;
       }
     }
 
