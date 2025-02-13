@@ -1,5 +1,6 @@
 import React from 'react'
 import './Timeslot.scss'
+import IconHandler from './IconHandler'
 
 const Timeslot = ({ time, events, rooms, isGlobal }) => {
   return (
@@ -22,6 +23,8 @@ const Timeslot = ({ time, events, rooms, isGlobal }) => {
                   {event.tag}
                 </p>
               )}
+
+              {isGlobal && <IconHandler identifier={event.tag} />}
 
               <h3 className="panel_title">{event.title}</h3>
 

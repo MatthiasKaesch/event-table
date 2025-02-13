@@ -88,11 +88,29 @@
 
     &.global {
       grid-column: 1/-1;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
       align-items: center;
       background: linear-gradient(7deg, var(--tertiary) 20%, var(--primary));
       border: var(--border-width) solid var(--white);
       outline: var(--outline-width) solid var(--primary);
-      text-align: center;
+
+      & .panel_tag {
+        display: none;
+      }
+
+      & .event_icon {
+        width: 48px;
+        height: 48px;
+        fill: var(--black);
+      }
+
+      & .panel_title {
+        display: inline-block;
+        width: fit-content;
+        font-size: 2rem;
+      }
     }
 
     &.empty {
