@@ -17,8 +17,10 @@
     padding: 0.75rem;
     text-align: center;
     font-weight: 700;
-    background-color: var(--primary);
+    text-transform: uppercase;
+    text-shadow: var(--textShadow);
     color: var(--textColorLight);
+    background-color: var(--primary);
     border: var(--borderWidth) solid var(--black);
     outline: var(--outlineWidth) solid var(--primary);
     border-bottom-right-radius: var(--borderRadius);

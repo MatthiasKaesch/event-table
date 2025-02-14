@@ -19,7 +19,7 @@
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
-  background-color: var(--tertiary);
+  background-color: var(--secondary);
   color: var(--textColorDark);
   border: var(--borderWidth) solid var(--borderStepColor);
   outline: var(--outlineWidth) solid var(--primary);
@@ -28,10 +28,10 @@
   @media (min-width: bp.$tablet) {
     font-size: 1.25rem;
     padding-top: var(--gridGap);
-    outline: 2px solid var(--tertiary);
+    outline: 2px solid var(--secondary);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-left-color: var(--tertiary);
+    border-left-color: var(--secondary);
   }
 }
 
@@ -77,11 +77,10 @@
     grid-template-rows: subgrid;
     grid-row: span 5;
     margin-top: var(--gridGap);
-    border-radius: var(--borderRadius);
-
     border: var(--borderWidth) solid var(--borderStepColor);
+    border-radius: var(--borderRadius);
     outline: var(--outlineWidth) solid var(--secondary);
-    background-color: var(--background-light);
+    background-color: var(--cardBackground);
 
     @media (min-width: bp.$tablet) {
       margin-top: 0;
@@ -93,7 +92,7 @@
       gap: 1rem;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(7deg, var(--tertiary) 20%, var(--primary));
+      background: linear-gradient(7deg, var(--secondary) 20%, var(--primary));
       border: var(--borderWidth) solid var(--black);
       outline: var(--outlineWidth) solid var(--primary);
 
@@ -104,12 +103,18 @@
       & .event_icon {
         width: 48px;
         height: 48px;
-        fill: var(--black);
+        fill: var(--white);
+        stroke: var(--black);
+        stroke-width: 16px;
+        paint-order: stroke;
       }
 
       & .panel_title {
         display: inline-block;
         width: fit-content;
+        font-size: 2rem;
+        color: var(--white);
+        text-shadow: var(--textShadow);
       }
     }
 
@@ -122,8 +127,14 @@
         var(--white) 20px
       );
 
-      & .panel_roomInfo {
-        display: none;
+      @media (prefers-color-scheme: dark) {
+        background: repeating-linear-gradient(
+          -45deg,
+          #525252,
+          #525252 10px,
+          var(--background-dark) 10px,
+          var(--background-dark) 20px
+        );
       }
 
       @media (max-width: bp.$tablet) {
@@ -146,6 +157,7 @@
     background: linear-gradient(25deg, var(--highlight), var(--secondary));
     border-bottom-right-radius: calc(var(--borderRadius) * 8);
     border-top-left-radius: var(--borderRadius);
+    color: var(--textColorDark);
   }
 
   &_title {
@@ -153,12 +165,18 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: none;
+    color: var(--textColorLight);
+  }
+
+  &_description {
+    color: var(--textColorLight);
   }
 
   &_speakers {
     margin-top: var(--gridGap);
-    border-top: 1px dotted var(--black);
+    border-top: 2px dotted var(--black);
     padding-bottom: 1rem;
+    color: var(--textColorLight);
 
     & .title {
       font-weight: 700;

@@ -2,9 +2,8 @@
   /* Colors */
   --primary: #f310a9;
   --secondary: #56c2f4;
-  --tertiary: #faf195;
   --black: #1a0f26;
-  --white: #f0f0f0;
+  --white: #ede6d9;
   --background-light: #ebebeb;
   --background-medium: #adadad;
   --background-dark: #353535;
@@ -13,6 +12,8 @@
   --textColorDark: var(--black);
   --textColorLight: var(--white);
   --borderStepColor: var(--white);
+
+  --cardBackground: var(--background-dark);
 
   /* Grid spacing */
   --gridGap: 1rem;
@@ -25,13 +26,16 @@
   --borderRadius: 6px;
   --borderWidth: 3px;
   --outlineWidth: 2px;
+
+  /* Text Shadow */
+  --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
+    -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* --primary: #330a0f;
   --secondary: #0b76a8;
-  --tertiary: #4e4904;
 */
     --borderStepColor: var(--background-dark);
     /*     --textColorDark: var(--white);
