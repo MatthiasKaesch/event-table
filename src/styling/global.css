@@ -9,11 +9,12 @@
   --background-dark: #353535;
   --highlight: #88fbfd;
 
-  --textColorDark: var(--black);
-  --textColorLight: var(--white);
+  --textColorDark: var(--white);
+  --textColorLight: var(--black);
   --borderStepColor: var(--white);
 
-  --cardBackground: var(--background-dark);
+  --cardBackground: var(--white);
+  --pageBackground: var(--background-light);
 
   /* Grid spacing */
   --gridGap: 1rem;
@@ -30,15 +31,50 @@
   /* Text Shadow */
   --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
     -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+
+  /* HEADLINE GRADIENTS */
+  /* Light Mode */
+  --headlineGradient-light: linear-gradient(
+    90deg in oklch,
+    var(--black),
+    var(--black),
+    var(--primary),
+    var(--primary)
+  );
+  /* Dark Mode */
+  --headlineGradient-dark: linear-gradient(
+    90deg in oklch,
+    var(--highlight),
+    var(--highlight),
+    var(--primary),
+    var(--primary)
+  );
+  /* Default Gradient */
+  --activeGradient: var(--headlineGradient-light);
+
+  /* Theme Transition */
+  --transition-speed: 0.4s;
+  --transition-ease: ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --primary: #330a0f;
-  --secondary: #0b76a8;
-*/
-    --borderStepColor: var(--background-dark);
-    /*     --textColorDark: var(--white);
---textColorLight: var(--black); */
-  }
+/* Transitioning Elements */
+body,
+.rooms_list__item,
+.timeslot,
+.panel_container,
+.panel_title,
+.panel_speakers__text,
+.panel_description {
+  transition: background-color var(--transition-speed) var(--transition-ease),
+    color var(--transition-speed) var(--transition-ease),
+    border var(--transition-speed) var(--transition-ease);
+}
+
+[data-theme='dark'] {
+  --cardBackground: var(--background-dark);
+  --borderStepColor: var(--background-dark);
+  --textColorDark: var(--black);
+  --textColorLight: var(--white);
+  --pageBackground: var(--black);
+  --activeGradient: var(--headlineGradient-dark);
 }
