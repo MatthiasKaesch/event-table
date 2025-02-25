@@ -1,7 +1,7 @@
 import rooms from './data/roomlist.json'
 import timeSlotsData from './data/timeslots.json'
-import './global_styling/normalize.css'
-import './global_styling/global.css'
+import './styling/normalize.css'
+import './styling/global.css'
 import './App.scss'
 
 import Header from './Header/Header'
