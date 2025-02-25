@@ -11,10 +11,10 @@
 
   --textColorDark: var(--white);
   --textColorLight: var(--black);
-  --borderStepColor: var(--white);
+  --borderStepColor: var(--pageBackground);
 
   --cardBackground: var(--white);
-  --pageBackground: var(--background-light);
+  --pageBackground: var(--background-medium);
 
   /* Grid spacing */
   --gridGap: 1rem;
