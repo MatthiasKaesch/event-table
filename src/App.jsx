@@ -4,9 +4,9 @@ import './styling/normalize.css'
 import './styling/global.css'
 import './App.scss'
 
-import Header from './Header/Header'
-import Roomlist from './Roomlist/Roomlist'
-import Timeslot from './Timeslot/Timeslot'
+import Header from './components/Header/Header'
+import Roomlist from './components/Roomlist/Roomlist'
+import Timeslot from './components/Timeslot/Timeslot'
 
 function App() {
   // Convert timeslots object to an array

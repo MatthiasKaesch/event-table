@@ -1,9 +1,9 @@
 import React from 'react'
 
-import WelcomeIcon from '../assets/icons/welcome.svg?react'
-import CoffeeIcon from '../assets/icons/coffee.svg?react'
-import LunchIcon from '../assets/icons/lunch.svg?react'
-import TogetherIcon from '../assets/icons/together.svg?react'
+import WelcomeIcon from '../../assets/icons/welcome.svg?react'
+import CoffeeIcon from '../../assets/icons/coffee.svg?react'
+import LunchIcon from '../../assets/icons/lunch.svg?react'
+import TogetherIcon from '../../assets/icons/together.svg?react'
 
 const Icons = {
   welcome: WelcomeIcon,
