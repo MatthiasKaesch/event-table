@@ -6,6 +6,7 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  width: 100%;
   gap: 2rem;
   padding: 2rem;
   text-align: center;
@@ -13,7 +14,6 @@
   @media (min-width: bp.$tablet) {
     flex-wrap: nowrap;
     text-align: left;
-    max-width: 80%;
     justify-content: flex-start;
   }
 

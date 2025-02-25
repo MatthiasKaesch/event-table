@@ -32,7 +32,12 @@
   --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
     -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 
-  /* HEADLINE GRADIENTS */
+  /* 
+  **
+  **
+  ** GRADIENTS */
+
+  /* --- HEADLINE --- */
   /* Light Mode */
   --headlineGradient-light: linear-gradient(
     90deg in oklch,
@@ -49,8 +54,28 @@
     var(--primary),
     var(--primary)
   );
-  /* Default Gradient */
+  /* Default */
   --activeGradient: var(--headlineGradient-light);
+
+  /* --- EMPTY PANEL --- */
+  /* Light Mode */
+  --emptyGradient-light: repeating-linear-gradient(
+    -45deg,
+    #dddddd,
+    #dddddd 10px,
+    #cdcdcd 10px,
+    #cdcdcd 20px
+  );
+  /* Dark Mode */
+  --emptyGradient-dark: repeating-linear-gradient(
+    -45deg,
+    #525252,
+    #525252 10px,
+    var(--background-dark) 10px,
+    var(--background-dark) 20px
+  );
+  /* Default */
+  --emptyGradient: var(--emptyGradient-light);
 
   /* Theme Transition */
   --transition-speed: 0.4s;
@@ -62,6 +87,7 @@ body,
 .rooms_list__item,
 .timeslot,
 .panel_container,
+.empty,
 .panel_title,
 .panel_speakers__text,
 .panel_description {
@@ -77,4 +103,5 @@ body,
   --textColorLight: var(--white);
   --pageBackground: var(--black);
   --activeGradient: var(--headlineGradient-dark);
+  --emptyGradient: var(--emptyGradient-dark);
 }

@@ -25,16 +25,16 @@
     outline: var(--outlineWidth) solid var(--primary);
     border-bottom-right-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
-    border-top-color: var(--primary);
+    border-top: none;
 
     @media (prefers-color-scheme: dark) {
       border: var(--borderWidth) solid var(--borderStepColor);
-      border-top-color: var(--primary);
+      border-top: none;
     }
   }
 
   &__item:first-child {
     border-bottom-left-radius: 0;
-    border-left-color: var(--primary);
+    border-left: none;
   }
 }
