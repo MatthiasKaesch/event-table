@@ -11,13 +11,12 @@ p,
 }
 
 body {
-  background-color: var(--background-dark);
+  background-color: var(--pageBackground);
 }
 
 .wrapper {
   width: calc(100% - 12px);
   margin-inline: auto;
-  background-color: var(--black);
 
   @media (min-width: bp.$tablet) {
     width: calc(100% - 32px);

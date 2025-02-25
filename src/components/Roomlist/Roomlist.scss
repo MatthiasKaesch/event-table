@@ -19,13 +19,18 @@
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: var(--textShadow);
-    color: var(--textColorLight);
+    color: var(--white);
     background-color: var(--primary);
-    border: var(--borderWidth) solid var(--black);
+    border: var(--borderWidth) solid var(--borderStepColor);
     outline: var(--outlineWidth) solid var(--primary);
     border-bottom-right-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
     border-top-color: var(--primary);
+
+    @media (prefers-color-scheme: dark) {
+      border: var(--borderWidth) solid var(--borderStepColor);
+      border-top-color: var(--primary);
+    }
   }
 
   &__item:first-child {

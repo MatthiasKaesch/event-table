@@ -8,7 +8,6 @@
   position: relative;
   gap: 2rem;
   padding: 2rem;
-  background-color: var(--black);
   text-align: center;
 
   @media (min-width: bp.$tablet) {
@@ -37,17 +36,10 @@
   font-family: 'Space Mono', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(
-    90deg in oklch,
-    var(--highlight),
-    var(--highlight),
-    var(--primary),
-    var(--primary)
-  );
+  background: var(--activeGradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: var(--background-medium);
 
   @media (min-width: bp.$tablet) {
     align-items: flex-start;
