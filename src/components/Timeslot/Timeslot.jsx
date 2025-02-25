@@ -10,6 +10,7 @@ const Timeslot = ({ time, events, rooms, isGlobal }) => {
         {events.map((event) => {
           return (
             <section
+              tabIndex={1}
               key={event.id}
               className={`panel_container ${event.title ? '' : 'empty'}  ${
                 isGlobal ? 'global' : ''
