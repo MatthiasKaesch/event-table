@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import Logo from '../../assets/images/Logo.webp'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
 const Header = () => {
   return (
@@ -14,6 +15,7 @@ const Header = () => {
         </span>
         <span className="headline_location">København, Danmark</span>
       </h1>
+      <ThemeToggle />
     </header>
   )
 }
