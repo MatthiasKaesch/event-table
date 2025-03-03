@@ -28,7 +28,7 @@
   @media (min-width: bp.$tablet) {
     font-size: 1.25rem;
     padding-top: var(--gridGap);
-    outline: 2px solid var(--secondary);
+    outline: var(--outlineWidth) solid var(--secondary);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
@@ -125,11 +125,11 @@
       }
 
       & .event_icon {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         fill: var(--white);
         stroke: var(--black);
-        stroke-width: 16px;
+        stroke-width: 1rem;
         paint-order: stroke;
       }
 
@@ -161,7 +161,7 @@
     margin: 0;
     padding: 0.5rem;
     width: 55%;
-    max-width: 175px;
+    max-width: 11rem;
     background: linear-gradient(25deg, var(--highlight), var(--secondary));
     border-bottom-right-radius: calc(var(--borderRadius) * 8);
     border-top-left-radius: var(--borderRadius);
@@ -182,7 +182,7 @@
 
   &_speakers {
     margin-top: var(--gridGap);
-    border-top: 2px dotted var(--black);
+    border-top: var(--outlineWidth) dotted var(--black);
     padding-bottom: 1rem;
     color: var(--textColorLight);
 

@@ -15,12 +15,20 @@ body {
 }
 
 .wrapper {
-  width: calc(100% - 12px);
+  width: calc(100% - 0.75rem);
   margin-inline: auto;
 
   @media (min-width: bp.$tablet) {
-    width: calc(100% - 32px);
-    max-width: 1680px;
+    width: calc(100% - 2rem);
     padding: 0 1rem 3.75rem;
+    max-width: 1680px;
+  }
+
+  @media (min-width: bp.$desktop__QHD) {
+    max-width: 1920px;
+  }
+
+  @media (min-width: bp.$desktop__UHD) {
+    max-width: 2560px;
   }
 }
