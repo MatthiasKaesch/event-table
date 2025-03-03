@@ -6,9 +6,9 @@
   --white: #ededed;
   --background-light: #ebebeb;
   --background-medium: #adadad;
-  --background-dark: #353535;
+  --background-dark: #252525;
   --highlight: #88fbfd;
-  --focusColor: rgb(24, 237, 0);
+  --focusColor: #18ed00;
 
   --textColorDark: var(--white);
   --textColorLight: var(--black);
@@ -20,18 +20,17 @@
   /* Grid spacing */
   --gridGap: 1rem;
 
-  /* Breakpoints */
-  --bp-desktop: 1140px;
-  --bp-tablet: 1140px;
-
   /* Border values */
-  --borderRadius: 6px;
-  --borderWidth: 3px;
-  --outlineWidth: 2px;
+  --borderRadius: 0.375rem; /* 6px */
+  --borderWidth: 0.1875rem; /* 3px */
+  --outlineWidth: 0.125rem; /* 2px */
 
-  /* Text Shadow */
+  /* Default Text Shadow */
   --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
     -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+
+  /* Header Background */
+  --header-bg: url('../assets/images/Header_Background_Light.webp');
 
   /* 
   **
@@ -79,12 +78,12 @@
   --emptyGradient: var(--emptyGradient-light);
 
   /* Theme Transition */
-  --transition-speed: 0.4s;
-  --transition-ease: ease-in-out;
+  /*   --transition-speed: 0s;
+  --transition-ease: ease-in-out; */
 }
 
 /* Transitioning Elements */
-body,
+/* body,
 .rooms_list__item,
 .timeslot,
 .panel_container,
@@ -96,7 +95,7 @@ body,
     color var(--transition-speed) var(--transition-ease),
     border var(--transition-speed) var(--transition-ease);
 }
-
+ */
 [data-theme='dark'] {
   --cardBackground: var(--background-dark);
   --borderStepColor: var(--black);
@@ -105,4 +104,13 @@ body,
   --pageBackground: var(--black);
   --activeGradient: var(--headlineGradient-dark);
   --emptyGradient: var(--emptyGradient-dark);
+  --header-bg: url('../assets/images/Header_Background_Dark.webp');
+}
+
+/* 4K text shadow */
+@media (min-width: 3400px) {
+  :root {
+    --textShadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
+      -2px 2px 0 var(--black), 2px 2px 0 var(--black);
+  }
 }
