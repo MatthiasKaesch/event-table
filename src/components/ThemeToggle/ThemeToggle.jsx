@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 
-const getPreferredTheme = () => {
-  // return theme from local storage
-  // OR system settings
-  return (
+const setInitialTheme = () => {
+  // get theme from local storage OR system settings
+  const initialTheme =
     localStorage.getItem('theme') ??
     (window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'dark'
       : 'light')
-  )
+  // set initial theme on document
+  document.documentElement.setAttribute('data-theme', initialTheme)
 }
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(getPreferredTheme())
+  const [theme, setTheme] = useState(setInitialTheme())
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'
