@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+
+import MoonIcon from '../../assets/icons/moon.svg?react'
+import SunIcon from '../../assets/icons/sun.svg?react'
 import './ThemeToggle.scss'
 
 const ThemeToggle = () => {
@@ -30,11 +33,15 @@ const ThemeToggle = () => {
   }
 
   return (
-    <div className="toggle" onClick={toggleTheme}>
-      <button
-        aria-label="Toggle Dark/Light Mode"
-        className="toggle_button"
-      ></button>
+    <div className="toggle_container">
+      <MoonIcon className="theme_icon" />
+      <div className="toggle" onClick={toggleTheme}>
+        <button
+          aria-label="Toggle Dark/Light Mode"
+          className="toggle_button"
+        ></button>
+      </div>
+      <SunIcon className="theme_icon" />
     </div>
   )
 }

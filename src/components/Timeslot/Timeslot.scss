@@ -91,7 +91,6 @@
     border-radius: var(--borderRadius);
     outline: var(--outlineWidth) solid var(--secondary);
     background-color: var(--cardBackground);
-    transition: border 0.4s ease-out;
 
     &:hover {
       border-color: var(--primary);

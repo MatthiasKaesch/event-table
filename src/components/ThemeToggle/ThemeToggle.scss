@@ -1,8 +1,29 @@
 @use '../../styling/breakpoints' as bp;
 
+.toggle_container {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-right: 0.5rem;
+
+  .theme_icon {
+    fill: var(--background-medium);
+  }
+
+  &:has(.light) {
+    .theme_icon {
+      fill: var(--background-light);
+    }
+  }
+}
+
 .toggle {
   position: relative;
   display: block;
+  margin: 0 0.5rem 0 0.5rem;
   width: var(--T_buttonWidth);
   height: var(--T_buttonHeight);
   border-radius: var(--T_buttonHeight);
@@ -37,7 +58,7 @@
     box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.5),
       inset 0 0.125rem 0.125rem rgba(255, 255, 255, 0.2),
       inset 0 -0.125rem 0.125rem rgba(255, 255, 255, 0.2);
-    transition: left 0.5s ease-in-out;
+    transition: left 0.25s ease-in-out;
   }
 
   &.light {

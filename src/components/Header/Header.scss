@@ -1,5 +1,11 @@
 @use '../../styling/breakpoints' as bp;
 
+.container {
+  background-image: var(--header-bg);
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -10,9 +16,6 @@
   gap: 2rem;
   padding: 2rem;
   text-align: center;
-  background-image: var(--header-bg);
-  background-size: auto 100%;
-  background-repeat: repeat-x;
 
   @media (min-width: bp.$tablet) {
     flex-wrap: nowrap;
