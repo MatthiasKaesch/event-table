@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
-  padding: 2rem;
+  padding: 0.5rem 2rem 0 2rem;
   text-align: center;
 
   @media (min-width: bp.$tablet) {
@@ -27,11 +27,11 @@
     max-width: 25%;
     height: auto;
     object-fit: contain;
-    background-color: var(--black);
-    box-shadow: 0 0 0.75rem 0.5rem var(--black);
+    background-color: var(--background-dark);
+    box-shadow: 0 0 0.125rem 1rem var(--background-dark);
 
     @media (min-width: bp.$tablet) {
-      max-width: 15%;
+      max-width: 10%;
     }
   }
 }
@@ -71,7 +71,7 @@
 
   &_location {
     display: block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     -webkit-text-fill-color: var(--textColorLight);
     background-clip: unset;
