@@ -29,6 +29,10 @@
   --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
     -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 
+  /* Theme Toggle Button Dimensions */
+  --T_buttonWidth: 5rem;
+  --T_buttonHeight: 2rem;
+
   /* Header Background */
   --header-bg: url('../assets/images/Header_Background_Light.webp');
 

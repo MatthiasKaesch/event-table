@@ -1,30 +1,41 @@
-import React, { useState } from 'react'
-
-const setInitialTheme = () => {
-  // get theme from local storage OR system settings
-  const initialTheme =
-    localStorage.getItem('theme') ??
-    (window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light')
-  // set initial theme on document
-  document.documentElement.setAttribute('data-theme', initialTheme)
-}
+import React, { useEffect, useState } from 'react'
+import './ThemeToggle.scss'
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(setInitialTheme())
+  const getInitialTheme = () => {
+    // get theme from local storage OR system settings
+    return (
+      localStorage.getItem('theme') ??
+      (window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light')
+    )
+  }
+
+  const [theme, setTheme] = useState(getInitialTheme())
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+
+    const buttonElement = document.querySelector('.toggle')
+    if (buttonElement) {
+      buttonElement.classList.add(theme === 'light' ? 'light' : 'dark')
+      buttonElement.classList.remove(theme === 'light' ? 'dark' : 'light')
+    }
+  }, [theme])
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.setAttribute('data-theme', newTheme)
-    localStorage.setItem('theme', newTheme)
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
   }
 
   return (
-    <button onClick={toggleTheme} aria-label="Toggle Dark/Light Mode">
-      {theme === 'light' ? '🌙' : '☀️'}
-    </button>
+    <div className="toggle" onClick={toggleTheme}>
+      <button
+        aria-label="Toggle Dark/Light Mode"
+        className="toggle_button"
+      ></button>
+    </div>
   )
 }
 
