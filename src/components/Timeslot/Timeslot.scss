@@ -28,7 +28,6 @@
   @media (min-width: bp.$tablet) {
     font-size: 1.25rem;
     padding-top: var(--gridGap);
-    outline: var(--outlineWidth) solid var(--tertiary);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
@@ -41,7 +40,6 @@
     margin-top: 2rem;
     padding: 0.5rem;
     gap: var(--gridGap) 0;
-
     background-color: var(--background-medium);
     border: 8px solid var(--black);
     border-radius: calc(var(--borderRadius) * 3);
@@ -89,7 +87,7 @@
     margin-top: var(--gridGap);
     border: var(--borderWidth) solid var(--borderStepColor);
     border-radius: var(--borderRadius);
-    outline: var(--outlineWidth) solid var(--tertiary);
+    outline: var(--outlineWidth) solid var(--outlineColor);
     background-color: var(--cardBackground);
 
     &:hover {
@@ -113,8 +111,8 @@
       background: linear-gradient(
         7deg,
         var(--secondary) 20%,
-        var(--primary) 80%,
-        var(--primary)
+        var(--tertiary) 80%,
+        var(--tertiary)
       );
       border: var(--borderWidth) solid var(--primary);
       outline: var(--outlineWidth) solid var(--tertiary);
@@ -161,15 +159,10 @@
     padding: 0.25rem;
     width: 50%;
     max-width: 11rem;
-    color: var(--white);
+    color: var(--textColorLight);
     border: 1px solid var(--tertiary);
     border-top: none;
     border-left: none;
-    background: linear-gradient(
-      55deg,
-      var(--black),
-      var(--background-dark) 45%
-    );
     border-bottom-right-radius: calc(var(--borderRadius) * 2);
     border-top-left-radius: var(--borderRadius);
   }
