@@ -24,11 +24,12 @@
   }
 
   &_image {
+    margin-top: 1rem;
     max-width: 25%;
     height: auto;
     object-fit: contain;
-    background-color: var(--background-dark);
-    box-shadow: 0 0 0.125rem 1rem var(--background-dark);
+    background-color: var(--logo-bg);
+    box-shadow: 0 0 0.125rem 1rem var(--logo-bg);
 
     @media (min-width: bp.$tablet) {
       max-width: 10%;

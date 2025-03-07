@@ -1,9 +1,10 @@
 :root {
   /* Colors */
   --primary: #88075d;
+  --primary-highlight: #f310a9;
   --secondary: #56c2f4;
   --tertiary: #0fa2e6;
-  --black: #15101b;
+  --black: rgb(20, 15, 26);
   --white: #ededed;
   --background-light: #ebebeb;
   --background-medium: #adadad;
@@ -13,9 +14,12 @@
   --textColorDark: var(--white);
   --textColorLight: var(--black);
   --borderStepColor: var(--pageBackground);
+  --outlineColor: var(--tertiary);
 
   --cardBackground: var(--white);
-  --pageBackground: var(--background-medium);
+  --pageBackground: #afafaf;
+
+  --logo-bg: rgba(0, 0, 0, 0.6);
 
   /* Grid spacing */
   --gridGap: 1rem;
@@ -65,10 +69,10 @@
   /* Light Mode */
   --emptyGradient-light: repeating-linear-gradient(
     -45deg,
-    #dddddd,
-    #dddddd 10px,
-    #cdcdcd 10px,
-    #cdcdcd 20px
+    #e3e3e3,
+    #e3e3e3 10px,
+    #d8d8d8 10px,
+    #d8d8d8 20px
   );
   /* Dark Mode */
   --emptyGradient-dark: repeating-linear-gradient(
@@ -103,12 +107,14 @@
 [data-theme='dark'] {
   --cardBackground: var(--background-dark);
   --borderStepColor: var(--black);
+  --outlineColor: var(--secondary);
   --textColorDark: var(--black);
   --textColorLight: var(--white);
   --pageBackground: var(--black);
   --activeGradient: var(--headlineGradient-dark);
   --emptyGradient: var(--emptyGradient-dark);
   --header-bg: url('../assets/images/Header_Background_Dark.webp');
+  --logo-bg: rgba(0, 0, 0, 0.5);
 }
 
 /* 4K text shadow */
