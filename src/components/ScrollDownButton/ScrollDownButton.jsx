@@ -15,14 +15,17 @@ const ScrollDownButton = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToBottom = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+  const scrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight / 2,
+      behavior: 'smooth',
+    })
   }
 
   return (
     <button
       className={`scroll-down-button ${isAtBottom ? 'at-bottom' : ''}`}
-      onClick={scrollToBottom}
+      onClick={scrollDown}
       aria-label="Scroll down"
     >
       ↓
