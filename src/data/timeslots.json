@@ -120,7 +120,7 @@
         "title": "Deep Learning Applications",
         "tag": "Workshop",
         "description": "Explore real-world deep learning models.",
-        "speakers": ["Dr. Amanda Lee"],
+        "speakers": ["Hiroshi Tanaka"],
         "roomNumber": 2
       },
       {
@@ -174,7 +174,7 @@
         "title": "Future of AI Hardware",
         "tag": "Panel",
         "description": "Advancements in AI chip technology.",
-        "speakers": ["David Casper"],
+        "speakers": ["Xavier Fontaine"],
         "roomNumber": 4
       }
     ]
@@ -257,7 +257,7 @@
         "title": "AI-Driven Marketing Automation",
         "tag": "Workshop",
         "description": "Hands-on strategies for leveraging AI in marketing campaigns.",
-        "speakers": ["Emanuelle Chapon"],
+        "speakers": ["Aisha Patel"],
         "roomNumber": 3
       },
       {
@@ -309,7 +309,7 @@
         "title": "The AI Startup Journey",
         "tag": "Workshop",
         "description": "Advice for entrepreneurs using AI.",
-        "speakers": ["David Casper"],
+        "speakers": ["Tomás Fernández"],
         "roomNumber": 3
       },
       {
@@ -331,7 +331,7 @@
         "title": "AI & Robotics",
         "tag": "Talk",
         "description": "How AI is advancing robotics and automation.",
-        "speakers": ["Dr. Amanda Lee"],
+        "speakers": ["Benjamin Fischer"],
         "roomNumber": 1
       },
       {
@@ -347,7 +347,7 @@
         "title": "Generative AI Tools",
         "tag": "Workshop",
         "description": "Hands-on session on AI-powered content creation.",
-        "speakers": ["David Casper"],
+        "speakers": ["Oliver Johansson"],
         "roomNumber": 3
       },
       {
@@ -355,7 +355,7 @@
         "title": "Bias & Fairness in AI",
         "tag": "Panel",
         "description": "Addressing biases in AI models and their societal impact, exploring methods for reducing discrimination in machine learning systems and ensuring fairer outcomes.",
-        "speakers": ["Emanuelle Chapon", "Aziz Cemrek"],
+        "speakers": ["Gabriela Silva", "Jessica Shaft"],
         "roomNumber": 4
       }
     ]
