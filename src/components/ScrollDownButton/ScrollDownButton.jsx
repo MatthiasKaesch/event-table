@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ArrowDown from '../../assets/icons/down-arrow.svg?react'
 import './ScrollDownButton.scss'
 
 const ScrollDownButton = () => {
@@ -28,7 +29,7 @@ const ScrollDownButton = () => {
       onClick={scrollDown}
       aria-label="Scroll down"
     >
-      ↓
+      <ArrowDown className="scroll-down-button__icon" />
     </button>
   )
 }

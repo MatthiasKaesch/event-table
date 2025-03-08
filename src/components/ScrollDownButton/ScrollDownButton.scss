@@ -7,18 +7,34 @@
   background: var(--primary);
   color: var(--white);
   font-size: 1.5rem;
-  border: none;
+  border: 1px solid var(--primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    fill 0.3s ease-in-out;
   animation: wiggle 2s infinite ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    border-color: var(--primary-highlight);
+  }
+
+  &__icon {
+    fill: var(--white);
+    padding: 0.75rem 0.5rem 0.5rem;
+
+    &:hover {
+      fill: var(--textColorLight);
+    }
+  }
 }
 
-/* Button verschwindet mit Jump-Down-Effekt */
+/* Hide Button Animation */
 .at-bottom {
   animation: jump-down 0.3s ease-in-out forwards;
   pointer-events: none;
