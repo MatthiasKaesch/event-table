@@ -28,6 +28,7 @@
   --borderRadius: 0.25rem; /* 4px */
   --borderWidth: 0.1875rem; /* 3px */
   --outlineWidth: 0.125rem; /* 2px */
+  --testValue: 16px;
 
   /* Default Text Shadow */
   --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
