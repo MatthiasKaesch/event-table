@@ -9,8 +9,8 @@
   --secondary: #56c2f4;
   --tertiary: #0fa2e6;
   --black: rgb(20, 15, 26);
-  --white: #ededed;
-  --background-light: #ebebeb;
+  --white: #ebebeb;
+  --background-light: #e4e4e4;
   --background-medium: #adadad;
   --background-dark: #252525;
   --focusColor: #18ed00;
@@ -20,10 +20,13 @@
   --borderStepColor: var(--pageBackground);
   --outlineColor: var(--tertiary);
 
-  --cardBackground: var(--white);
   --pageBackground: #afafaf;
+  --panel-bg: var(--white);
+  --cardBackground: var(--background-light);
+  --roomInfo-bg: var(--background-medium);
 
   --logo-bg: rgba(0, 0, 0, 0.6);
+  --svgStroke: var(--secondary);
 
   /* 
   **
@@ -41,6 +44,9 @@
   /* Default Text Shadow */
   --textShadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
     -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+  --textShadowGlobalPanel: -1px -1px 0 var(--secondary),
+    1px -1px 0 var(--secondary), -1px 1px 0 var(--secondary),
+    1px 1px 0 var(--secondary);
 
   /* Theme Toggle Button Dimensions */
   --T_buttonWidth: 3.5rem;
@@ -97,16 +103,22 @@
 
 /* Global color changes */
 [data-theme='dark'] {
-  --cardBackground: var(--background-dark);
   --borderStepColor: var(--black);
   --outlineColor: var(--secondary);
   --textColorDark: var(--black);
   --textColorLight: var(--white);
-  --pageBackground: var(--black);
   --activeGradient: var(--headlineGradient-dark);
   --emptyGradient: var(--emptyGradient-dark);
   --header-bg: url('../assets/images/Header_Background_Dark.webp');
+
+  --textShadowGlobalPanel: var(--textShadow);
+  --pageBackground: var(--black);
+  --panel-bg: var(--background-dark);
+  --cardBackground: var(--background-dark);
+  --roomInfo-bg: var(--black);
+
   --logo-bg: rgba(0, 0, 0, 0.5);
+  --svgStroke: var(--black);
 }
 
 /* 4K text shadow */

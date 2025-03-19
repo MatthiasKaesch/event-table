@@ -38,11 +38,10 @@
   &_maingrid {
     display: grid;
     margin-top: 2rem;
-    padding: 0.5rem;
-    gap: var(--gridGap) 0;
-    background-color: var(--background-medium);
-    border: 8px solid var(--black);
-    border-radius: calc(var(--borderRadius) * 3);
+    padding: 1rem 0.5rem;
+    background-color: var(--panel-bg);
+    border: 2px solid var(--tertiary);
+    border-radius: var(--borderRadius);
 
     @media (min-width: bp.$tablet) {
       grid-template-columns: 90px 1fr;
@@ -55,9 +54,8 @@
 
     &:has(.global) {
       .timeslot {
-        border-color: var(--primary);
-
         @media (min-width: bp.$tablet) {
+          border-color: var(--primary);
           border-left: none;
         }
       }
@@ -108,14 +106,17 @@
       gap: 1rem;
       justify-content: center;
       align-items: center;
+      outline: var(--outlineWidth) solid var(--tertiary);
       background: linear-gradient(
         7deg,
         var(--secondary) 20%,
         var(--tertiary) 80%,
         var(--tertiary)
       );
-      border: var(--borderWidth) solid var(--primary);
-      outline: var(--outlineWidth) solid var(--tertiary);
+
+      @media (min-width: bp.$tablet) {
+        border: var(--borderWidth) solid var(--primary);
+      }
 
       & .panel_tag {
         display: none;
@@ -124,8 +125,8 @@
       & .event_icon {
         width: 3rem;
         height: 3rem;
-        fill: var(--white);
-        stroke: var(--black);
+        fill: var(--textColorLight);
+        stroke: var(--svgStroke);
         stroke-width: 1rem;
         paint-order: stroke;
       }
@@ -134,13 +135,18 @@
         display: inline-block;
         width: fit-content;
         font-size: 2rem;
-        color: var(--white);
-        text-shadow: var(--textShadow);
+        color: var(--textColorLight);
+        text-shadow: var(--textShadowGlobalPanel);
       }
     }
 
     &.empty {
       background: var(--emptyGradient);
+
+      &:hover,
+      &:focus {
+        border-color: var(--borderStepColor);
+      }
 
       @media (max-width: bp.$tablet) {
         display: none;
@@ -196,8 +202,8 @@
 
   &_roomInfo {
     padding: 0.5rem;
-    background-color: var(--background-medium);
-    color: var(--textColorDark);
+    background-color: var(--roomInfo-bg);
+    color: var(--textColorLight);
     text-align: center;
     font-weight: 700;
     border-bottom-right-radius: var(--borderRadius);
