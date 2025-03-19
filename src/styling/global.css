@@ -1,5 +1,9 @@
 :root {
-  /* Colors */
+  /* 
+  **
+  **
+  ** COLORS */
+
   --primary: #88075d;
   --primary-highlight: #f310a9;
   --secondary: #56c2f4;
@@ -20,6 +24,11 @@
   --pageBackground: #afafaf;
 
   --logo-bg: rgba(0, 0, 0, 0.6);
+
+  /* 
+  **
+  **
+  ** LAYOUT VALUES */
 
   /* Grid spacing */
   --gridGap: 1rem;
@@ -86,6 +95,7 @@
   --emptyGradient: var(--emptyGradient-light);
 }
 
+/* Global color changes */
 [data-theme='dark'] {
   --cardBackground: var(--background-dark);
   --borderStepColor: var(--black);
@@ -100,7 +110,7 @@
 }
 
 /* 4K text shadow */
-@media (min-width: 3400px) {
+@media (min-width: 3800px) {
   :root {
     --textShadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
       -2px 2px 0 var(--black), 2px 2px 0 var(--black);
