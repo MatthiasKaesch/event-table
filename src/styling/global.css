@@ -84,26 +84,8 @@
   );
   /* Default */
   --emptyGradient: var(--emptyGradient-light);
-
-  /* Theme Transition */
-  /*   --transition-speed: 0s;
-  --transition-ease: ease-in-out; */
 }
 
-/* Transitioning Elements */
-/* body,
-.rooms_list__item,
-.timeslot,
-.panel_container,
-.empty,
-.panel_title,
-.panel_speakers__text,
-.panel_description {
-  transition: background-color var(--transition-speed) var(--transition-ease),
-    color var(--transition-speed) var(--transition-ease),
-    border var(--transition-speed) var(--transition-ease);
-}
- */
 [data-theme='dark'] {
   --cardBackground: var(--background-dark);
   --borderStepColor: var(--black);
