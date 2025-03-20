@@ -49,10 +49,11 @@
     1px 1px 0 var(--secondary);
 
   /* Theme Toggle Button Dimensions */
+  --buttonScale: 1.5;
   --T_buttonWidth: 3.5rem;
   --T_buttonHeight: 1.5rem;
-  --T_buttonWidthMobile: calc(var(--T_buttonWidth) / 1.25);
-  --T_buttonHeightMobile: calc(var(--T_buttonHeight) / 1.25);
+  --T_buttonWidthMobile: calc(var(--T_buttonWidth) / var(--buttonScale));
+  --T_buttonHeightMobile: calc(var(--T_buttonHeight) / var(--buttonScale));
 
   /* Header Background */
   --header-bg: url('../assets/images/Header_Background_Light.webp');
