@@ -25,7 +25,7 @@
   --cardBackground: var(--background-light);
   --roomInfo-bg: var(--background-medium);
 
-  --logo-bg: rgba(0, 0, 0, 0.6);
+  --logo-bg: rgba(0, 0, 0, 0.85);
   --svgStroke: var(--secondary);
 
   /* 
@@ -51,6 +51,8 @@
   /* Theme Toggle Button Dimensions */
   --T_buttonWidth: 3.5rem;
   --T_buttonHeight: 1.5rem;
+  --T_buttonWidthMobile: calc(var(--T_buttonWidth) / 1.25);
+  --T_buttonHeightMobile: calc(var(--T_buttonHeight) / 1.25);
 
   /* Header Background */
   --header-bg: url('../assets/images/Header_Background_Light.webp');

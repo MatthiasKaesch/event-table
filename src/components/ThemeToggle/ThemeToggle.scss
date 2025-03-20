@@ -3,7 +3,7 @@
 .toggle_container {
   display: flex;
   width: fit-content;
-  margin-left: auto;
+  margin: 1rem auto;
   justify-content: end;
   align-items: center;
   padding-bottom: 0.75rem;
@@ -17,6 +17,10 @@
     .theme_icon {
       fill: var(--background-dark);
     }
+  }
+
+  @media (min-width: bp.$tablet) {
+    margin: 0 0 0 auto;
   }
 }
 
