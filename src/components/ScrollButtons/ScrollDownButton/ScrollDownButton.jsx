@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ArrowDown from '../../assets/icons/down-arrow.svg?react'
+import ArrowDown from '../../../assets/icons/down-arrow.svg?react'
 import './ScrollDownButton.scss'
 
 const ScrollDownButton = () => {
