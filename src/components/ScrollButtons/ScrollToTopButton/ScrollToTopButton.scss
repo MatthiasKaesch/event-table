@@ -1,0 +1,22 @@
+@use '../../../styling/breakpoints' as bp;
+
+.scrollDownButton {
+  display: block;
+  margin: 2rem auto;
+  width: 200px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--textColorLight);
+  background-color: var(--textColorDark);
+  border: 1px solid var(--tertiary);
+  border-radius: var(--borderRadius);
+
+  @media (min-width: bp.$tablet) {
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    color: var(--tertiary);
+  }
+}
