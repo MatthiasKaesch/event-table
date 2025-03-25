@@ -7,7 +7,8 @@ import './App.scss'
 import Header from './components/Header/Header'
 import Roomlist from './components/Roomlist/Roomlist'
 import Timeslot from './components/Timeslot/Timeslot'
-import ScrollDownButton from './components/ScrollDownButton/ScrollDownButton'
+import ScrollDownButton from './components/ScrollButtons/ScrollDownButton/ScrollDownButton'
+import ScrollToTopButton from './components/ScrollButtons/ScrollToTopButton/ScrollToTopButton'
 
 function App() {
   // Convert timeslots object to an array
@@ -34,6 +35,7 @@ function App() {
         )
       })}
       <ScrollDownButton />
+      <ScrollToTopButton />
     </div>
   )
 }
