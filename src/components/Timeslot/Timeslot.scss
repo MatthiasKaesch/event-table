@@ -145,9 +145,8 @@
 
       @media (min-width: bp.$tablet) {
         display: block;
+        background: var(--emptyGradient);
       }
-
-      background: var(--emptyGradient);
 
       &:hover,
       &:focus {
