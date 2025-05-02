@@ -14,7 +14,7 @@
 
 .timeslot {
   margin: 0;
-  padding: calc(var(--gridGap) / 2) 0;
+  padding: calc(var(--gridGap) / 3) 0;
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
@@ -36,8 +36,8 @@
 .panels {
   &_maingrid {
     display: grid;
-    margin-top: 2rem;
-    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+    padding: 0.33rem 0.33rem;
     background-color: var(--panel-bg);
     border: 2px solid var(--tertiary);
     border-radius: var(--borderRadius);
@@ -45,7 +45,6 @@
     @media (min-width: bp.$tablet) {
       grid-template-columns: 90px 1fr;
       gap: var(--gridGap);
-      margin-top: 1rem;
       padding: 0;
       background-color: transparent;
       border: none;
@@ -177,11 +176,15 @@
   }
 
   &_title {
-    margin: var(--gridGap) 0;
+    margin: calc(var(--gridGap) / 2) 0;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: none;
     color: var(--textColorLight);
+
+    @media (min-width: bp.$tablet) {
+      margin: var(--gridGap) 0;
+    }
   }
 
   &_description {
@@ -189,10 +192,14 @@
   }
 
   &_speakers {
-    margin-top: var(--gridGap);
+    margin-top: calc(var(--gridGap) / 2);
     border-top: var(--outlineWidth) dotted var(--black);
-    padding-bottom: 1rem;
+    padding-bottom: calc(var(--gridGap) / 2);
     color: var(--textColorLight);
+
+    @media (min-width: bp.$tablet) {
+      margin-top: var(--gridGap);
+    }
 
     & .title {
       font-weight: 700;
