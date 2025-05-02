@@ -149,7 +149,7 @@
       }
 
       @media (max-width: bp.$tablet) {
-        /*   display: none; */
+        display: none;
       }
     }
   }
@@ -201,16 +201,25 @@
   }
 
   &_roomInfo {
+    display: flex;
+    gap: 0.5rem;
     padding: 0.5rem;
     background-color: var(--roomInfo-bg);
     color: var(--textColorLight);
-    text-align: center;
     font-weight: 700;
     border-bottom-right-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
 
     @media (min-width: bp.$tablet) {
       display: none;
+    }
+
+    .door_icon {
+      fill: var(--textColorLight);
+    }
+
+    &__name {
+      line-height: 2;
     }
   }
 }

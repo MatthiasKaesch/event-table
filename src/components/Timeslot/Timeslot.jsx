@@ -1,5 +1,6 @@
 import React from 'react'
 import './Timeslot.scss'
+import DoorIcon from '../../assets/icons/door.svg?react'
 import IconHandler from './IconHandler'
 
 const Timeslot = ({ time, events, rooms, isGlobal }) => {
@@ -44,7 +45,12 @@ const Timeslot = ({ time, events, rooms, isGlobal }) => {
               )}
 
               {!isGlobal && (
-                <p className="panel_roomInfo">{rooms[event.roomNumber].name}</p>
+                <div className="panel_roomInfo">
+                  <DoorIcon />
+                  <p className="panel_roomInfo__name">
+                    {rooms[event.roomNumber].name}
+                  </p>
+                </div>
               )}
             </section>
           )
