@@ -15,6 +15,9 @@
   }
 
   &__item {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0.5rem;
     text-align: center;
     font-size: 1.25rem;
@@ -24,8 +27,7 @@
     text-shadow: var(--textShadow);
     color: var(--white);
     background-color: var(--primary);
-    border: var(--borderWidth) solid var(--primary);
-    outline: var(--outlineWidth) solid var(--primary-highlight);
+    border: var(--borderWidth) solid var(--primary-highlight);
     border-bottom-right-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
     border-top: none;
@@ -34,5 +36,12 @@
   &__item:first-child {
     border-bottom-left-radius: 0;
     border-left: none;
+  }
+
+  .door_icon {
+    fill: var(--white);
+    stroke: var(--svgStroke);
+    stroke-width: 1rem;
+    paint-order: stroke;
   }
 }
