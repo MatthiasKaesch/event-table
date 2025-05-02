@@ -14,8 +14,8 @@
 
 .timeslot {
   margin: 0;
-  padding: var(--gridGap) 0;
-  font-size: 2rem;
+  padding: calc(var(--gridGap) / 2) 0;
+  font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
@@ -26,7 +26,6 @@
   border-radius: var(--borderRadius);
 
   @media (min-width: bp.$tablet) {
-    font-size: 1.25rem;
     padding-top: var(--gridGap);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -107,15 +106,15 @@
       justify-content: center;
       align-items: center;
       outline: var(--outlineWidth) solid var(--tertiary);
-      background: linear-gradient(
-        7deg,
-        var(--secondary) 20%,
-        var(--tertiary) 80%,
-        var(--tertiary)
-      );
 
       @media (min-width: bp.$tablet) {
         border: var(--borderWidth) solid var(--primary);
+        background: linear-gradient(
+          7deg,
+          var(--secondary) 20%,
+          var(--tertiary) 80%,
+          var(--tertiary)
+        );
       }
 
       & .panel_tag {
@@ -123,20 +122,23 @@
       }
 
       & .event_icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         fill: var(--textColorLight);
-        stroke: var(--svgStroke);
-        stroke-width: 1rem;
-        paint-order: stroke;
+
+        @media (min-width: bp.$tablet) {
+          fill: var(--black);
+        }
       }
 
       & .panel_title {
         display: inline-block;
         width: fit-content;
-        font-size: 2rem;
-        color: var(--textColorLight);
-        text-shadow: var(--textShadowGlobalPanel);
+        font-size: 1.25rem;
+
+        @media (min-width: bp.$tablet) {
+          color: var(--black);
+        }
       }
     }
 
@@ -204,7 +206,7 @@
   &_roomInfo {
     display: flex;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.25rem;
     background-color: var(--roomInfo-bg);
     color: var(--textColorLight);
     font-weight: 700;
@@ -216,6 +218,7 @@
     }
 
     .door_icon {
+      width: 24px;
       fill: var(--textColorLight);
     }
 
