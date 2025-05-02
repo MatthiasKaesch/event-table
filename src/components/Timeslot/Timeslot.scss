@@ -36,10 +36,10 @@
 .panels {
   &_maingrid {
     display: grid;
-    margin-top: 1rem;
-    padding: 0.33rem 0.33rem;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.25rem;
     background-color: var(--panel-bg);
-    border: 2px solid var(--tertiary);
+    border: 1px solid var(--tertiary);
     border-radius: var(--borderRadius);
 
     @media (min-width: bp.$tablet) {
@@ -196,10 +196,6 @@
     border-top: var(--outlineWidth) dotted var(--black);
     padding-bottom: calc(var(--gridGap) / 2);
     color: var(--textColorLight);
-
-    @media (min-width: bp.$tablet) {
-      margin-top: var(--gridGap);
-    }
 
     & .title {
       font-weight: 700;
