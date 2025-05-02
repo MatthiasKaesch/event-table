@@ -141,15 +141,17 @@
     }
 
     &.empty {
+      display: none;
+
+      @media (min-width: bp.$tablet) {
+        display: block;
+      }
+
       background: var(--emptyGradient);
 
       &:hover,
       &:focus {
         border-color: var(--borderStepColor);
-      }
-
-      @media (max-width: bp.$tablet) {
-        display: none;
       }
     }
   }
