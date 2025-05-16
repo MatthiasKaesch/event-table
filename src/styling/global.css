@@ -104,7 +104,7 @@
   --emptyGradient: var(--emptyGradient-light);
 }
 
-/* Global color changes */
+/* Global changes */
 [data-theme='dark'] {
   --borderStepColor: var(--black);
   --outlineColor: var(--secondary);
